@@ -49,8 +49,6 @@ jobs:
     permissions:
       pages: write
       id-token: write
-    environment:
-      name: github-pages
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     steps:
