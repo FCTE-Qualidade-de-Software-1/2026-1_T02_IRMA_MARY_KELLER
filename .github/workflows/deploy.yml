@@ -34,7 +34,7 @@ jobs:
         with:
           path: site
 
-      - name: Debug: list site files and uploaded artifacts
+      - name: "Debug: list site files and uploaded artifacts"
         run: |
           echo "GITHUB_RUN_ID=${GITHUB_RUN_ID}"
           echo "Repository: ${GITHUB_REPOSITORY}"
