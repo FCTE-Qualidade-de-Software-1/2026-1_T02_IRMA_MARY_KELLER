@@ -1,10 +1,10 @@
-# Qualidade de Software - 2026-1 T02 IRMA MARY KELLER
+# Grupo IRMã MARY KELLER(T02-2026-1)
 
-## 📜 Bem-vindo!
+## Sobre o projeto
 
-Repositório da disciplina de **Qualidade de Software** referente ao projeto de avaliação de qualidade de software - **Turma 2, semestre 2026-1**.
+Essa página documenta os artefatos desenvolvidos pelo Grupo Irmã Mary Kenneth Keller no primeiro semestre de 2026, na disciplina de **Qualidade de Software** da Faculdade de Ciências e Tecnologias em Engenharia da Universidade de Brasília (FCTE-UnB).
 
-Esta é a página de documentação centralizada para todas as entregas e trabalhos da disciplina.
+O projeto tem como objetivo aplicar técnicas, normas e boas práticas de qualidade de software, realizando uma análise da plataforma **Mural UNB** com base em critérios estabelecidos pela norma ISO/IEC 25010 (SQuaRE).
 
 ## 🎯 Objetivo do Projeto
 

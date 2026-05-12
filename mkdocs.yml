@@ -8,7 +8,6 @@ repo_url: https://github.com/FCTE-Qualidade-de-Software-1/2026-1_T02_IRMA_MARY_K
 
 theme:
   name: material
-  language: pt-br
   palette:
     - scheme: default
       primary: blue
@@ -33,8 +32,7 @@ theme:
     - content.code.copy
 
 plugins:
-  - search:
-      lang: pt
+  - search
 
 markdown_extensions:
   - pymdownx.emoji:
@@ -50,5 +48,5 @@ markdown_extensions:
 nav:
   - Início: index.md
   - Sobre o Projeto: sobre.md
-  - Integrantes: integrantes.md
+  - Fase 1 - Processo de Avaliação: fase1.md
   - Documentação: documentacao.md

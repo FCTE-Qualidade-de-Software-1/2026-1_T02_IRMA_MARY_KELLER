@@ -6,7 +6,65 @@ Repositório da disciplina de Qualidade de Software referente ao projeto de aval
 
 ## 📎 Link da página de documentação
 
-[Adicionar link da documentação aqui]
+[Documentação do Projeto](https://fcte-qualidade-de-software-1.github.io/2026-1_T02_IRMA_MARY_KELLER/)
+
+## 🚀 Como Rodar o Projeto
+
+### Pré-requisitos
+- Python 3.8 ou superior
+- pip (gerenciador de pacotes Python)
+- Git
+
+### Instalação e Execução
+
+1. **Clone o repositório:**
+```bash
+git clone https://github.com/FCTE-Qualidade-de-Software-1/2026-1_T02_IRMA_MARY_KELLER.git
+cd 2026-1_T02_IRMA_MARY_KELLER
+```
+
+2. **Crie um ambiente virtual:**
+```bash
+python3 -m venv mkdocs_env
+```
+
+3. **Ative o ambiente virtual:**
+```bash
+# Linux/Mac
+source mkdocs_env/bin/activate
+
+# Windows
+mkdocs_env\Scripts\activate
+```
+
+4. **Instale as dependências:**
+```bash
+pip install --upgrade pip setuptools
+pip install -r requirements.txt
+```
+
+5. **Inicie o servidor local:**
+```bash
+mkdocs serve
+```
+
+6. **Acesse a documentação:**
+Abra seu navegador e vá para `http://localhost:8000`
+
+### Desativar o Ambiente Virtual
+```bash
+deactivate
+```
+
+### Build da Documentação
+Para gerar a documentação estática:
+```bash
+mkdocs build
+```
+
+A documentação será gerada na pasta `site/`.
+
+---
 
 ## 🌟 Integrantes
 
