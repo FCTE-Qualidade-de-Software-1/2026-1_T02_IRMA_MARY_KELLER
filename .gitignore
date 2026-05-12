@@ -2,6 +2,7 @@ site/
 .venv/
 venv/
 env/
+mkdocs_env/
 __pycache__/
 *.pyc
 .DS_Store
