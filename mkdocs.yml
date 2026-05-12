@@ -1,0 +1,54 @@
+site_name: Qualidade de Software - 2026-1 T02 IRMA MARY KELLER
+site_description: Documentação do projeto de avaliação de qualidade de software - Turma 2, 2026-1
+site_author: Equipe IRMA MARY KELLER
+site_url: https://fcte-qualidade-de-software-1.github.io/2026-1_T02_IRMA_MARY_KELLER/
+
+repo_name: 2026-1_T02_IRMA_MARY_KELLER
+repo_url: https://github.com/FCTE-Qualidade-de-Software-1/2026-1_T02_IRMA_MARY_KELLER
+
+theme:
+  name: material
+  language: pt-br
+  palette:
+    - scheme: default
+      primary: blue
+      accent: cyan
+      toggle:
+        icon: material/weather-night
+        name: Modo escuro
+    - scheme: slate
+      primary: blue
+      accent: cyan
+      toggle:
+        icon: material/weather-sunny
+        name: Modo claro
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+plugins:
+  - search:
+      lang: pt
+
+markdown_extensions:
+  - pymdownx.emoji:
+      emoji_index: !!python/name:pymdownx.emoji.twemoji
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.superfences
+  - pymdownx.tasklist
+  - pymdownx.arithmatex
+  - pymdownx.tabbed
+  - toc:
+      toc_depth: 3
+
+nav:
+  - Início: index.md
+  - Sobre o Projeto: sobre.md
+  - Integrantes: integrantes.md
+  - Documentação: documentacao.md
