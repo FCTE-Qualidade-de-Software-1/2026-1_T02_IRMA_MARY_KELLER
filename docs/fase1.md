@@ -184,15 +184,6 @@ O Mural UnB conecta-se aos **Objetivos de Desenvolvimento Sustentável** da Agen
 
 ## 12. Tabela de Participação
 
-| Nome | Matrícula | Participação (%) |
-|------|-----------|------------------|
-| Paulo Nery Lobo | 221008740 | 20% |
-| Ranni Heler Lopes | 202016800 | 20% |
-| Thiago Melo Tonin | 2211022453 | 20% |
-| Matheus Rodrigues | 222007012 | 20% |
-| Guilherme Costa Zanella | 222024837 | 20% |
-| **Total** | | **100%** |
+A tabela de contribuição foi movida para a página [Tabela de Contribuição](contribuicao.md).
 
 ---
-
-[← Voltar ao Início](index.md)

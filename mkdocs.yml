@@ -47,6 +47,5 @@ markdown_extensions:
 
 nav:
   - Início: index.md
-  - Sobre o Projeto: sobre.md
   - Fase 1 - Processo de Avaliação: fase1.md
-  - Documentação: documentacao.md
+  - Tabela de Contribuição: contribuicao.md
