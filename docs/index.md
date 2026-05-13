@@ -1,45 +1,50 @@
-# Grupo IRMã MARY KELLER(T02-2026-1)
+# Grupo Irmã Mary Keller — T02, 2026-1
 
-## Sobre o projeto
+## Sobre o Projeto
 
-Essa página documenta os artefatos desenvolvidos pelo Grupo Irmã Mary Kenneth Keller no primeiro semestre de 2026, na disciplina de **Qualidade de Software** da Faculdade de Ciências e Tecnologias em Engenharia da Universidade de Brasília (FCTE-UnB).
+Esta página documenta os artefatos produzidos pelo Grupo Irmã Mary Keller no primeiro semestre de 2026, no âmbito da disciplina **Qualidade de Software** da Faculdade de Ciências e Tecnologias em Engenharia da Universidade de Brasília (FCTE-UnB).
 
-O projeto tem como objetivo aplicar técnicas, normas e boas práticas de qualidade de software, realizando uma análise da plataforma **Mural UNB** com base em critérios estabelecidos pela norma ISO/IEC 25010 (SQuaRE).
+O projeto consiste na avaliação sistemática da plataforma **Mural UnB** ([https://muralunb.com.br](https://muralunb.com.br)) com base nos processos e modelos de qualidade definidos pela família de normas **ISO/IEC 25000 (SQuaRE)**. A avaliação percorre as fases estabelecidas pela ISO/IEC 25040: requisitos de avaliação, especificação, execução e conclusão.
 
-## 🎯 Objetivo do Projeto
+## Objeto de Avaliação
 
-O objetivo geral é aplicar, na prática, técnicas, normas e boas práticas que garantem a qualidade de produtos e processos ao longo do ciclo de vida do software. A análise crítica será realizada sobre uma aplicação real, avaliando critérios como:
+| Atributo | Valor |
+|----------|-------|
+| Software | Mural UnB |
+| URL | [https://muralunb.com.br](https://muralunb.com.br) |
+| Repositório | [github.com/unb-mds/2025-2-Mural-UnB](https://github.com/unb-mds/2025-2-Mural-UnB) |
+| Tipo | Aplicação web de mural digital acadêmico |
+| Norma de referência | ISO/IEC 25010:2011 (SQuaRE) |
 
-- ✅ **Portabilidade**
-- ✅ **Compatibilidade**
-- 📋 Adequação Funcional
-- 🔒 Confiabilidade
-- ⚡ Eficiência
-- 🛡️ Segurança
-- 🔧 Manutenibilidade
+## Características de Qualidade Avaliadas
 
-## 📁 Estrutura de Documentação
+As seguintes características foram selecionadas conforme a ISO/IEC 25010, com exclusão obrigatória de Usabilidade por diretriz da disciplina:
 
-A documentação está organizada nas seguintes seções:
+| Característica | Prioridade |
+|---------------|:-----------:|
+| Adequação Funcional | 1 |
+| Confiabilidade | 2 |
+| Manutenibilidade | 3 |
 
-- **[Sobre o Projeto](sobre.md)** - Contexto, objetivo e escopo
-- **[Integrantes](integrantes.md)** - Equipe responsável pelo projeto
-- **[Documentação](documentacao.md)** - Acesso aos documentos detalhados
+A justificativa dos critérios de priorização e a relação entre essas características encontram-se detalhadas na [Fase 1](fase1.md).
 
-## 🌟 Equipe
+## Estrutura da Documentação
 
-Projeto desenvolvido por:
+| Seção | Conteúdo |
+|-------|----------|
+| [Fase 1 — Requisitos de Avaliação](fase1.md) | Propósito, partes interessadas, classificação do produto, modelo de qualidade adaptado, ODS relacionados |
+| [Tabela de Contribuição](contribuicao.md) | Participação de cada integrante por entrega |
 
-| Paulo Nery | Ranni Heler | Thiago Melo | Matheus Rodrigues | Guilherme Zanella |
-|:---:|:---:|:---:|:---:|:---:|
-| ![Paulo](https://github.com/Pnery2004.png?size=80) | ![Ranni](https://github.com/AkaeRanni-ranni.png?size=80) | ![Thiago](https://github.com/audittmega.png?size=80) | ![Matheus](https://github.com/mrodrigues14.png?size=80) | ![Guilherme](https://github.com/guilhermezan42.png?size=80) |
+## Equipe
 
-## 📚 Referência
-
-- **Norma**: ISO/IEC 25010 (SQuaRE)
-- **Plataforma**: Moodle/Aprender 3
-- **Disciplina**: Qualidade de Software (2026-1)
+| Nome | Matrícula | GitHub |
+|------|-----------|--------|
+| Paulo Nery Lobo | 221008740 | [@Pnery2004](https://github.com/Pnery2004) |
+| Ranni Heler Lopes | 202016800 | [@AkaeRanni-ranni](https://github.com/AkaeRanni-ranni) |
+| Thiago Melo Tonin | 2211022453 | [@audittmega](https://github.com/audittmega) |
+| Matheus Rodrigues | 222007012 | [@mrodrigues14](https://github.com/mrodrigues14) |
+| Guilherme Costa Zanella | 222024837 | [@guilhermezan42](https://github.com/guilhermezan42) |
 
 ---
 
-**Última atualização**: Maio de 2026
+Ultima atualizacao: maio de 2026
