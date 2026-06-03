@@ -1,0 +1,1218 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentação do projeto de avaliação de qualidade de software - Turma 2, 2026-1">
+      
+      
+        <meta name="author" content="Equipe IRMA MARY KELLER">
+      
+      
+        <link rel="canonical" href="https://fcte-qualidade-de-software-1.github.io/2026-1_T02_IRMA_MARY_KELLER/fase1/">
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../contribuicao/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Fase 1 - Processo de Avaliação - Qualidade de Software - 2026-1 T02 IRMA MARY KELLER</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#fase-1-requisitos-de-avaliacao-de-qualidade" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Qualidade de Software - 2026-1 T02 IRMA MARY KELLER" class="md-header__button md-logo" aria-label="Qualidade de Software - 2026-1 T02 IRMA MARY KELLER" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Qualidade de Software - 2026-1 T02 IRMA MARY KELLER
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Fase 1 - Processo de Avaliação
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="cyan"  aria-label="Modo escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Modo escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="cyan"  aria-label="Modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-1_T02_IRMA_MARY_KELLER" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2026-1_T02_IRMA_MARY_KELLER
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Início
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Fase 1 - Processo de Avaliação
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../contribuicao/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Tabela de Contribuição
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../declaracao-ia/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Declaração de Uso de IA
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Qualidade de Software - 2026-1 T02 IRMA MARY KELLER" class="md-nav__button md-logo" aria-label="Qualidade de Software - 2026-1 T02 IRMA MARY KELLER" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Qualidade de Software - 2026-1 T02 IRMA MARY KELLER
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/FCTE-Qualidade-de-Software-1/2026-1_T02_IRMA_MARY_KELLER" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2026-1_T02_IRMA_MARY_KELLER
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Início
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 1 - Processo de Avaliação
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 1 - Processo de Avaliação
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-contexto-de-trabalho" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Contexto de Trabalho
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-descricao-estruturada-do-software-avaliado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Descrição Estruturada do Software Avaliado
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Descrição Estruturada do Software Avaliado">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-objetivos-da-plataforma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Objetivos da Plataforma
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-arquitetura-tecnica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Arquitetura Técnica
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-requisitante-e-partes-interessadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Requisitante e Partes Interessadas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-classificacao-do-tipo-de-produto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Classificação do Tipo de Produto
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-proposito-da-avaliacao-e-uso-pretendido-dos-resultados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Propósito da Avaliação e Uso Pretendido dos Resultados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-modelo-de-qualidade-isoiec-25010-e-adaptacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Modelo de Qualidade — ISO/IEC 25010 e Adaptação
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Modelo de Qualidade — ISO/IEC 25010 e Adaptação">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-representacao-grafica-do-modelo-adaptado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 Representação Gráfica do Modelo Adaptado
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-descricao-das-subcaracteristicas-avaliadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 Descrição das Subcaracterísticas Avaliadas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-caracteristicas-selecionadas-criterios-de-priorizacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Características Selecionadas — Critérios de Priorização
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Características Selecionadas — Critérios de Priorização">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-criterios-adotados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 Critérios Adotados
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-aplicacao-dos-criterios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 Aplicação dos Critérios
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-relacao-das-caracteristicas-com-o-proposito-declarado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 Relação das Características com o Propósito Declarado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-escopo-profundidade-e-objetos-de-avaliacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Escopo, Profundidade e Objetos de Avaliação
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Escopo, Profundidade e Objetos de Avaliação">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-escopo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 Escopo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-profundidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 Profundidade
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-relacao-com-avaliacoes-futuras" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 Relação com Avaliações Futuras
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-objetivos-de-desenvolvimento-sustentavel-relacionados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Objetivos de Desenvolvimento Sustentável Relacionados
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Objetivos de Desenvolvimento Sustentável Relacionados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ods-4-educacao-de-qualidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ODS 4 — Educação de Qualidade
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ods-16-paz-justica-e-instituicoes-eficazes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ODS 16 — Paz, Justiça e Instituições Eficazes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ods-9-industria-inovacao-e-infraestrutura" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ODS 9 — Indústria, Inovação e Infraestrutura
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-referencias-bibliograficas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Referências Bibliográficas
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contribuicao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tabela de Contribuição
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../declaracao-ia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Declaração de Uso de IA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="fase-1-requisitos-de-avaliacao-de-qualidade">Fase 1 — Requisitos de Avaliação de Qualidade</h1>
+<h2 id="1-contexto-de-trabalho">1. Contexto de Trabalho</h2>
+<p>Este documento registra a execução da Fase 1 do processo de avaliação de qualidade de software, conforme definido pela família de normas ISO/IEC 25000 (SQuaRE) [1]. A atividade é desenvolvida no âmbito da disciplina Qualidade de Software do curso de Engenharia de Software da FCTE-UnB e tem como objeto de análise a aplicação web <strong>Mural UnB</strong>, disponível em <a href="https://muralunb.com.br">https://muralunb.com.br</a>.</p>
+<p>A Fase 1, denominada "Estabelecimento dos Requisitos de Avaliação", tem como objetivo definir o escopo, o propósito e o modelo de qualidade que orientarão as fases subsequentes de especificação e execução da avaliação [2].</p>
+<hr />
+<h2 id="2-descricao-estruturada-do-software-avaliado">2. Descrição Estruturada do Software Avaliado</h2>
+<p>O <strong>Mural UnB</strong> é uma plataforma digital desenvolvida pelo projeto MDS/GPP da Universidade de Brasília com o propósito de centralizar e organizar a divulgação de oportunidades, eventos e avisos acadêmicos dirigidos à comunidade universitária. O sistema coleta informações de múltiplas fontes, aplica processamento automatizado com inteligência artificial e as disponibiliza em interface web de acesso público.</p>
+<h3 id="21-objetivos-da-plataforma">2.1 Objetivos da Plataforma</h3>
+<p>O projeto foi concebido para substituir a comunicação dispersa em grupos informais de mensagens e murais físicos, fornecendo um canal estruturado e categorizado de informações. Entre as finalidades declaradas no repositório oficial [3], destacam-se:</p>
+<ul>
+<li>centralização de oportunidades acadêmicas (bolsas, estágios, eventos);</li>
+<li>categorização e filtragem de conteúdo por relevância;</li>
+<li>automação do processo de coleta, processamento e publicação de dados; e</li>
+<li>garantia de integridade e atualização contínua do conteúdo exibido.</li>
+</ul>
+<h3 id="22-arquitetura-tecnica">2.2 Arquitetura Técnica</h3>
+<table>
+<thead>
+<tr>
+<th>Camada</th>
+<th>Tecnologia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Interface</td>
+<td>React 18 com TypeScript e Tailwind CSS</td>
+</tr>
+<tr>
+<td>Processamento de dados</td>
+<td>Python (pandas), API Gemini (LLM), GitHub Actions</td>
+</tr>
+<tr>
+<td>Armazenamento intermediário</td>
+<td>JSON</td>
+</tr>
+<tr>
+<td>Hospedagem e entrega</td>
+<td>GitHub Pages</td>
+</tr>
+<tr>
+<td>Controle de versão e CI/CD</td>
+<td>Git, GitHub, GitHub Actions</td>
+</tr>
+</tbody>
+</table>
+<p>A arquitetura é predominantemente estática com geração automatizada de dados: um pipeline de coleta e processamento é executado periodicamente via GitHub Actions, gerando arquivos JSON que alimentam o frontend React implantado no GitHub Pages [3].</p>
+<hr />
+<h2 id="3-requisitante-e-partes-interessadas">3. Requisitante e Partes Interessadas</h2>
+<p>Em conformidade com o processo SQuaRE [2], foram identificadas as partes interessadas relevantes para esta avaliação:</p>
+<table>
+<thead>
+<tr>
+<th>Papel</th>
+<th>Identificação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Requisitante da avaliação</td>
+<td>Professora Cristiane Ramos — disciplina Qualidade de Software (FCTE-UnB)</td>
+</tr>
+<tr>
+<td>Avaliadores</td>
+<td>Grupo Irmã Mary Keller — T02, 2026-1</td>
+</tr>
+<tr>
+<td>Desenvolvedores do produto</td>
+<td>Equipe MDS/GPP UnB — projeto 2025-2-Mural-UnB</td>
+</tr>
+<tr>
+<td>Usuários finais</td>
+<td>Discentes e docentes da Universidade de Brasília</td>
+</tr>
+<tr>
+<td>Operadores</td>
+<td>Mantenedores do repositório GitHub da aplicação</td>
+</tr>
+<tr>
+<td>Beneficiários institucionais</td>
+<td>Secretaria de Comunicação e coordenações de curso da UnB</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="4-classificacao-do-tipo-de-produto">4. Classificação do Tipo de Produto</h2>
+<p>A classificação do produto segue os critérios estabelecidos pela ISO/IEC 25010 [1] para categorização de sistemas de software:</p>
+<table>
+<thead>
+<tr>
+<th>Aspecto</th>
+<th>Caracterização</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tipo de software</td>
+<td>Aplicação web de acesso público</td>
+</tr>
+<tr>
+<td>Categoria funcional</td>
+<td>Sistema de mural digital e agregação de conteúdo acadêmico</td>
+</tr>
+<tr>
+<td>Natureza de uso</td>
+<td>Leitura pública sem autenticação; administração por pipeline automatizado</td>
+</tr>
+<tr>
+<td>Modelo de implantação</td>
+<td>Hospedagem estática (GitHub Pages) com CI/CD automatizado</td>
+</tr>
+<tr>
+<td>Natureza do código</td>
+<td>Código aberto (open source), desenvolvido em contexto acadêmico</td>
+</tr>
+<tr>
+<td>Ciclo de vida esperado</td>
+<td>Projeto de duração semestral com possibilidade de continuidade por turmas futuras</td>
+</tr>
+</tbody>
+</table>
+<p>A natureza open source e o ciclo de vida acadêmico são aspectos determinantes para a seleção das características de qualidade avaliadas, conforme detalhado na seção 7.</p>
+<hr />
+<h2 id="5-proposito-da-avaliacao-e-uso-pretendido-dos-resultados">5. Propósito da Avaliação e Uso Pretendido dos Resultados</h2>
+<p>O propósito desta avaliação é verificar, de forma sistemática e baseada em evidências, em que medida o Mural UnB satisfaz requisitos de qualidade relevantes para um sistema de informação acadêmica de acesso público, desenvolvido e mantido em contexto de aprendizagem.</p>
+<p>Os resultados produzidos serão utilizados para:</p>
+<ol>
+<li><strong>documentar o estado de qualidade atual</strong> do software em relação às características selecionadas, fornecendo uma linha de base para comparações futuras;</li>
+<li><strong>identificar não conformidades e oportunidades de melhoria</strong> que possam ser comunicadas à equipe de desenvolvimento como contribuição ao projeto; e</li>
+<li><strong>subsidiar as Fases 2 e 3</strong> da avaliação SQuaRE, que compreenderão a especificação das métricas, a execução das medições e a apresentação dos resultados consolidados.</li>
+</ol>
+<p>Os resultados não têm como objetivo classificar ou reprovar o software, mas sim produzir conhecimento técnico aplicado e demonstrar o domínio do processo de avaliação pelos avaliadores [2].</p>
+<hr />
+<h2 id="6-modelo-de-qualidade-isoiec-25010-e-adaptacao">6. Modelo de Qualidade — ISO/IEC 25010 e Adaptação</h2>
+<p>O modelo de referência adotado é o definido pela ISO/IEC 25010:2011 [1], que organiza a qualidade do produto de software em oito características principais. Para esta avaliação, o modelo foi adaptado ao contexto específico do Mural UnB, restringindo o escopo a três características consideradas prioritárias. A característica <strong>Usabilidade</strong> foi explicitamente excluída por determinação metodológica da disciplina [4].</p>
+<h3 id="61-representacao-grafica-do-modelo-adaptado">6.1 Representação Gráfica do Modelo Adaptado</h3>
+<pre class="mermaid"><code>graph TD
+    A["Qualidade do Produto — Mural UnB"] --&gt; B["Adequação Funcional&lt;br/&gt;(selecionada)"]
+    A --&gt; C["Confiabilidade&lt;br/&gt;(selecionada)"]
+    A --&gt; D["Manutenibilidade&lt;br/&gt;(selecionada)"]
+    A --&gt; X["Usabilidade&lt;br/&gt;(excluída — diretriz disciplina)"]
+    A --&gt; Y["Segurança, Desempenho,&lt;br/&gt;Compatibilidade, Portabilidade&lt;br/&gt;(fora do escopo desta fase)"]
+
+    B --&gt; B1["Completude Funcional"]
+    B --&gt; B2["Correção Funcional"]
+    B --&gt; B3["Pertinência Funcional"]
+
+    C --&gt; C1["Maturidade"]
+    C --&gt; C2["Disponibilidade"]
+    C --&gt; C3["Tolerância a Falhas"]
+
+    D --&gt; D1["Modularidade"]
+    D --&gt; D2["Analisabilidade"]
+    D --&gt; D3["Modificabilidade"]
+    D --&gt; D4["Testabilidade"]
+
+    style X fill:#ffcccc,stroke:#cc0000
+    style Y fill:#f0f0f0,stroke:#999999</code></pre>
+<h3 id="62-descricao-das-subcaracteristicas-avaliadas">6.2 Descrição das Subcaracterísticas Avaliadas</h3>
+<p><strong>Adequação Funcional</strong> — avalia se as funções fornecidas cobrem as tarefas e objetivos declarados dos usuários com a abrangência e a precisão necessárias [1]. As subcaracterísticas relevantes para o Mural UnB são:</p>
+<ul>
+<li><em>Completude Funcional</em>: verificação se todas as funções esperadas para um mural digital (listagem, filtragem, categorização, atualização) estão implementadas;</li>
+<li><em>Correção Funcional</em>: verificação se o sistema produz resultados corretos com o nível de precisão necessário; e</li>
+<li><em>Pertinência Funcional</em>: avaliação de se as funções implementadas facilitam o cumprimento do propósito declarado sem incluir funções desnecessárias.</li>
+</ul>
+<p><strong>Confiabilidade</strong> — avalia em que grau o sistema executa funções especificadas sob condições definidas por um período de tempo determinado [1]. As subcaracterísticas relevantes são:</p>
+<ul>
+<li><em>Maturidade</em>: frequência com que o sistema apresenta falhas em operação normal;</li>
+<li><em>Disponibilidade</em>: capacidade do sistema de estar acessível e operacional quando requisitado; e</li>
+<li><em>Tolerância a Falhas</em>: capacidade de o sistema operar como pretendido na presença de falhas de hardware ou software.</li>
+</ul>
+<p><strong>Manutenibilidade</strong> — avalia a eficácia e eficiência com que o sistema pode ser modificado para correção, melhoria ou adaptação ao ambiente [1]. As subcaracterísticas relevantes são:</p>
+<ul>
+<li><em>Modularidade</em>: grau em que o sistema é composto de componentes discretos, de forma que mudanças em um componente tenham impacto mínimo sobre os demais;</li>
+<li><em>Analisabilidade</em>: facilidade de diagnosticar deficiências ou identificar partes que precisam ser modificadas;</li>
+<li><em>Modificabilidade</em>: facilidade de realização de modificações sem introdução de defeitos; e</li>
+<li><em>Testabilidade</em>: facilidade de estabelecer critérios de teste para o sistema e de verificar se eles foram satisfeitos.</li>
+</ul>
+<hr />
+<h2 id="7-caracteristicas-selecionadas-criterios-de-priorizacao">7. Características Selecionadas — Critérios de Priorização</h2>
+<h3 id="71-criterios-adotados">7.1 Critérios Adotados</h3>
+<p>A seleção e priorização das características seguiu quatro critérios, derivados do propósito declarado e do tipo de produto identificado na seção 4:</p>
+<p><strong>Critério C1 — Criticidade para o propósito declarado</strong>: quanto a ausência ou falha na característica compromete o objetivo central do sistema (mural acadêmico de informações confiáveis).</p>
+<p><strong>Critério C2 — Mensurabilidade objetiva</strong>: existência de métricas e procedimentos de medição estabelecidos pela ISO/IEC 25023 [5] que possam ser aplicados ao artefato avaliado sem instrumentação invasiva.</p>
+<p><strong>Critério C3 — Impacto sobre os usuários finais</strong>: extensão do prejuízo causado a discentes e docentes em caso de não conformidade com a característica.</p>
+<p><strong>Critério C4 — Relevância para o contexto open source acadêmico</strong>: importância da característica para a sustentabilidade do projeto ao longo de múltiplos semestres e equipes de desenvolvimento distintas.</p>
+<h3 id="72-aplicacao-dos-criterios">7.2 Aplicação dos Critérios</h3>
+<table>
+<thead>
+<tr>
+<th>Característica</th>
+<th style="text-align: center;">C1 — Criticidade</th>
+<th style="text-align: center;">C2 — Mensurabilidade</th>
+<th style="text-align: center;">C3 — Impacto usuário</th>
+<th style="text-align: center;">C4 — Open source</th>
+<th style="text-align: center;">Prioridade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Adequação Funcional</td>
+<td style="text-align: center;">Alta</td>
+<td style="text-align: center;">Alta</td>
+<td style="text-align: center;">Alto</td>
+<td style="text-align: center;">Média</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr>
+<td>Confiabilidade</td>
+<td style="text-align: center;">Alta</td>
+<td style="text-align: center;">Alta</td>
+<td style="text-align: center;">Alto</td>
+<td style="text-align: center;">Média</td>
+<td style="text-align: center;">2</td>
+</tr>
+<tr>
+<td>Manutenibilidade</td>
+<td style="text-align: center;">Média-Alta</td>
+<td style="text-align: center;">Alta</td>
+<td style="text-align: center;">Indireto</td>
+<td style="text-align: center;">Alta</td>
+<td style="text-align: center;">3</td>
+</tr>
+</tbody>
+</table>
+<h3 id="73-relacao-das-caracteristicas-com-o-proposito-declarado">7.3 Relação das Características com o Propósito Declarado</h3>
+<p>A <strong>Adequação Funcional</strong> é a característica com maior alinhamento ao propósito, pois um mural digital que não cobre as funções esperadas (exibição, categorização e atualização de oportunidades acadêmicas) falha em sua razão de existir, independentemente de outros atributos de qualidade.</p>
+<p>A <strong>Confiabilidade</strong> é diretamente relacionada ao propósito porque a utilidade do sistema é nula quando ele está indisponível ou exibe dados desatualizados. Considerando que a atualização depende de pipelines automatizados (GitHub Actions), falhas nesse pipeline afetam a confiabilidade percebida pelo usuário.</p>
+<p>A <strong>Manutenibilidade</strong> sustenta o propósito no horizonte temporal do projeto: como o desenvolvimento é conduzido por equipes de estudantes que se renovam a cada semestre, a capacidade de compreender e modificar o código é condição necessária para a evolução contínua das funcionalidades e a correção de defeitos identificados.</p>
+<p>A relação entre as três características será analisada nos resultados finais: espera-se que baixa manutenibilidade aumente a incidência de defeitos funcionais e de confiabilidade, e que falhas de adequação funcional indiquem necessidade de refatoração que demanda alta manutenibilidade.</p>
+<hr />
+<h2 id="8-escopo-profundidade-e-objetos-de-avaliacao">8. Escopo, Profundidade e Objetos de Avaliação</h2>
+<h3 id="81-escopo">8.1 Escopo</h3>
+<p>A avaliação abrange o produto de software implantado em <a href="https://muralunb.com.br">https://muralunb.com.br</a> e o código-fonte disponível no repositório [3], considerando:</p>
+<ul>
+<li>interface web pública (frontend React);</li>
+<li>pipeline de coleta e processamento de dados (scripts Python e workflows GitHub Actions); e</li>
+<li>documentação técnica disponível no repositório.</li>
+</ul>
+<p>O backend de banco de dados (quando aplicável) e aspectos de infraestrutura de rede estão fora do escopo desta avaliação, por não serem acessíveis para inspeção pelos avaliadores.</p>
+<h3 id="82-profundidade">8.2 Profundidade</h3>
+<table>
+<thead>
+<tr>
+<th>Tipo de Análise</th>
+<th>Aplicação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Inspeção de código-fonte</td>
+<td>Análise estática de modularidade, analisabilidade e testabilidade</td>
+</tr>
+<tr>
+<td>Testes funcionais (caixa-preta)</td>
+<td>Verificação de completude, correção e pertinência funcional</td>
+</tr>
+<tr>
+<td>Monitoramento de disponibilidade</td>
+<td>Verificação de acessibilidade e tempo de resposta do sistema implantado</td>
+</tr>
+<tr>
+<td>Análise de histórico de falhas</td>
+<td>Inspeção de issues e releases no repositório GitHub</td>
+</tr>
+</tbody>
+</table>
+<h3 id="83-relacao-com-avaliacoes-futuras">8.3 Relação com Avaliações Futuras</h3>
+<p>Esta Fase 1 estabelece os requisitos que orientarão:</p>
+<ul>
+<li><strong>Fase 2</strong> (Especificação da Avaliação): definição de métricas, procedimentos de medição e critérios de julgamento para cada subcaracterística selecionada;</li>
+<li><strong>Fase 3</strong> (Execução da Avaliação): coleta de dados brutos, aplicação das métricas e consolidação dos resultados; e</li>
+<li><strong>Fase 4</strong> (Conclusão): elaboração do relatório final com relação entre as características avaliadas e recomendações de melhoria.</li>
+</ul>
+<p>Não há avaliações anteriores deste software pelos avaliadores que possam ser utilizadas como linha de base comparativa.</p>
+<hr />
+<h2 id="9-objetivos-de-desenvolvimento-sustentavel-relacionados">9. Objetivos de Desenvolvimento Sustentável Relacionados</h2>
+<p>O Mural UnB conecta-se a objetivos da Agenda 2030 da ONU [6] que são diretamente relevantes à sua função de plataforma de comunicação acadêmica aberta.</p>
+<h3 id="ods-4-educacao-de-qualidade">ODS 4 — Educação de Qualidade</h3>
+<table>
+<thead>
+<tr>
+<th>Meta</th>
+<th>Indicador</th>
+<th>Vínculo com o Mural UnB</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4.3 — Garantir acesso igual a ensino técnico, profissional e de nível superior de qualidade</td>
+<td>4.3.1 — Taxa de participação de jovens e adultos em educação formal e não formal</td>
+<td>A plataforma amplia o acesso a informações sobre bolsas, monitorias e eventos que viabilizam a permanência estudantil e o aproveitamento acadêmico</td>
+</tr>
+<tr>
+<td>4.b — Ampliar o número de bolsas de estudo disponíveis</td>
+<td>—</td>
+<td>O sistema agrega e divulga oportunidades de bolsas e estágios, reduzindo a assimetria de informação entre estudantes</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ods-16-paz-justica-e-instituicoes-eficazes">ODS 16 — Paz, Justiça e Instituições Eficazes</h3>
+<table>
+<thead>
+<tr>
+<th>Meta</th>
+<th>Indicador</th>
+<th>Vínculo com o Mural UnB</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>16.6 — Desenvolver instituições eficazes, responsáveis e transparentes</td>
+<td>16.6.2 — Proporção da população satisfeita com experiência mais recente dos serviços públicos</td>
+<td>A plataforma melhora a eficácia da comunicação institucional da UnB, tornando informações públicas mais acessíveis e organizadas</td>
+</tr>
+<tr>
+<td>16.10 — Assegurar o acesso público à informação</td>
+<td>16.10.2 — Número de países que garantem acesso público à informação</td>
+<td>O sistema implementa, em nível institucional, o princípio de acesso público à informação acadêmica</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ods-9-industria-inovacao-e-infraestrutura">ODS 9 — Indústria, Inovação e Infraestrutura</h3>
+<table>
+<thead>
+<tr>
+<th>Meta</th>
+<th>Indicador</th>
+<th>Vínculo com o Mural UnB</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>9.b — Apoiar o desenvolvimento de tecnologia, pesquisa e inovação nacionais</td>
+<td>—</td>
+<td>O projeto fomenta o desenvolvimento de tecnologias abertas por estudantes de engenharia, contribuindo para a formação de capacidade técnica nacional</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="10-referencias-bibliograficas">10. Referências Bibliográficas</h2>
+<ul>
+<li>[1] ISO/IEC 25010:2011. <em>Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models</em>. International Organization for Standardization, 2011.</li>
+<li>[2] ISO/IEC 25040:2011. <em>Systems and software engineering — SQuaRE — Evaluation process</em>. International Organization for Standardization, 2011.</li>
+<li>[3] Mural UnB. Repositório do projeto. GitHub, 2025. Disponível em: <a href="https://github.com/unb-mds/2025-2-Mural-UnB">https://github.com/unb-mds/2025-2-Mural-UnB</a>. Acesso em: maio 2026.</li>
+<li>[4] RAMOS, Cristiane. <em>Roteiro da Disciplina Qualidade de Software — 2026-1</em>. FCTE-UnB, 2026. (Documento interno da disciplina.)</li>
+<li>[5] ISO/IEC 25023:2016. <em>Systems and software engineering — SQuaRE — Measurement of system and software product quality</em>. International Organization for Standardization, 2016.</li>
+<li>[6] ONU BRASIL. <em>Objetivos de Desenvolvimento Sustentável</em>. Disponível em: <a href="https://brasil.un.org/pt-br/sdgs">https://brasil.un.org/pt-br/sdgs</a>. Acesso em: maio 2026.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "toc.integrate", "search.suggest", "search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
