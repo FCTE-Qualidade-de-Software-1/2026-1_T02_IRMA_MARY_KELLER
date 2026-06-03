@@ -1,4 +1,6 @@
 site_name: Qualidade de Software - 2026-1 T02 IRMA MARY KELLER
+docs_dir: src
+site_dir: docs
 site_description: Documentação do projeto de avaliação de qualidade de software - Turma 2, 2026-1
 site_author: Equipe IRMA MARY KELLER
 site_url: https://fcte-qualidade-de-software-1.github.io/2026-1_T02_IRMA_MARY_KELLER/

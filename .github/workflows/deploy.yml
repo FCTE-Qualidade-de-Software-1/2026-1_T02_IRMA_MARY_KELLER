@@ -5,12 +5,10 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     permissions:
-      contents: read
-    env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+      contents: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -26,32 +24,12 @@ jobs:
           pip install mkdocs mkdocs-material pymdown-extensions
 
       - name: Build documentation
+        run: mkdocs build
+
+      - name: Commit docs to main
         run: |
-          mkdocs build
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: site
-
-      - name: "Debug: list site files and uploaded artifacts"
-        run: |
-          echo "GITHUB_RUN_ID=${GITHUB_RUN_ID}"
-          echo "Repository: ${GITHUB_REPOSITORY}"
-          echo "Site files:"
-          ls -la site || true
-          echo "Artifacts for this run (API):"
-          curl -s -H "Authorization: Bearer ${GITHUB_TOKEN}" -H "Accept: application/vnd.github+json" "https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}/artifacts" || true
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    permissions:
-      pages: write
-      id-token: write
-    env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v3
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/
+          git diff --cached --quiet || git commit -m "ci: build mkdocs site [skip ci]"
+          git push
