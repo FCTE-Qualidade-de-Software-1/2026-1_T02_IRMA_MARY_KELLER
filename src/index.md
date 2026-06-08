@@ -47,4 +47,8 @@ A justificativa dos critérios de priorização e a relação entre essas caract
 
 ---
 
-Ultima atualizacao: maio de 2026
+## Histórico de Versões
+
+| Versão | Data | Descrição | Autor |
+|--------|------|-----------|-------|
+| 1.0 | 03/06/2026 | Criação da página inicial com estrutura do projeto, equipe e características avaliadas |Paulo Nery Lobo|

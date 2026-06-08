@@ -12,3 +12,11 @@ Esta página reúne a tabela de participação da equipe no trabalho.
 | **Total** | | **100%** |
 
 [← Voltar à Fase 1](fase1.md)
+
+---
+
+## Histórico de Versões
+
+| Versão | Data | Descrição | Autor |
+|--------|------|-----------|-------|
+| 1.0 | 03/06/2026 | Criação da tabela de contribuição da equipe | Paulo Nery Lobo |

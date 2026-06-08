@@ -13,3 +13,11 @@ O uso dessas ferramentas teve caráter complementar, servindo apenas como suport
 ---
 
 **Revisão:** Todo o conteúdo que recebeu apoio de IA foi integralmente revisado, ajustado e validado por pelo menos um membro do grupo, garantindo conformidade com os requisitos da disciplina e com os objetivos do projeto.
+
+---
+
+## Histórico de Versões
+
+| Versão | Data | Descrição | Autor |
+|--------|------|-----------|-------|
+| 1.0 | 03/06/2026 | Criação da declaração de uso de IA | Paulo Nery Lobo |

@@ -236,3 +236,12 @@ O Mural UnB conecta-se a objetivos da Agenda 2030 da ONU [6] que são diretament
 - [4] RAMOS, Cristiane. *Roteiro da Disciplina Qualidade de Software — 2026-1*. FCTE-UnB, 2026. (Documento interno da disciplina.)
 - [5] ISO/IEC 25023:2016. *Systems and software engineering — SQuaRE — Measurement of system and software product quality*. International Organization for Standardization, 2016.
 - [6] ONU BRASIL. *Objetivos de Desenvolvimento Sustentável*. Disponível em: [https://brasil.un.org/pt-br/sdgs](https://brasil.un.org/pt-br/sdgs). Acesso em: maio 2026.
+
+---
+
+## Histórico de Versões
+
+| Versão | Data | Descrição | Autor |
+|--------|------|-----------|-------|
+| 1.1 | 13/05/2026|Reestruturação da fase 1| Matheus Rodrigues|
+| 1.0 | 11/05/2026 | Criação da estrutura inicial da página com contexto, modelo de qualidade e características selecionadas |Paulo Nery Lobo|
