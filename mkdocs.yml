@@ -53,5 +53,8 @@ markdown_extensions:
 nav:
   - Início: index.md
   - Fase 1 - Processo de Avaliação: fase1.md
+  - Fase 2 - Especificação da Avaliação: fase2.md
+  - Fase 3 - Projeto da Avaliação: fase3.md
+  - Fase 4 - Execução da Avaliação: fase4.md
   - Tabela de Contribuição: contribuicao.md
   - Declaração de Uso de IA: declaracao-ia.md

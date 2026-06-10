@@ -87,13 +87,14 @@ O modelo de referência adotado é o definido pela ISO/IEC 25010:2011 [1], que o
 
 ### 6.1 Representação Gráfica do Modelo Adaptado
 
+**Representação Gráfica do Modelo Adaptado**
+
+**Diagrama 1**
+
 ```mermaid
 graph TD
     A["Qualidade do Produto — Mural UnB"] --> B["Adequação Funcional<br/>(selecionada)"]
     A --> C["Confiabilidade<br/>(selecionada)"]
-    A --> D["Manutenibilidade<br/>(selecionada)"]
-    A --> X["Usabilidade<br/>(excluída — diretriz disciplina)"]
-    A --> Y["Segurança, Desempenho,<br/>Compatibilidade, Portabilidade<br/>(fora do escopo desta fase)"]
 
     B --> B1["Completude Funcional"]
     B --> B2["Correção Funcional"]
@@ -102,14 +103,23 @@ graph TD
     C --> C1["Maturidade"]
     C --> C2["Disponibilidade"]
     C --> C3["Tolerância a Falhas"]
+```
+
+**Diagrama 2**
+
+```mermaid
+graph TD
+    A["Qualidade do Produto — Mural UnB"] --> D["Manutenibilidade<br/>(selecionada)"]
+    A --> X["Usabilidade<br/>(excluída — diretriz disciplina)"]
+    A --> Y["Segurança, Desempenho,<br/>Compatibilidade, Portabilidade<br/>(fora do escopo desta fase)"]
 
     D --> D1["Modularidade"]
     D --> D2["Analisabilidade"]
     D --> D3["Modificabilidade"]
     D --> D4["Testabilidade"]
 
-    style X fill:#ffcccc,stroke:#cc0000
-    style Y fill:#f0f0f0,stroke:#999999
+    style X stroke:#cc0000,stroke-width:2px,stroke-dasharray:5 5
+    style Y stroke:#888888,stroke-width:2px,stroke-dasharray:3 3
 ```
 
 ### 6.2 Descrição das Subcaracterísticas Avaliadas
