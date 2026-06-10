@@ -2,7 +2,7 @@
 
 ## 📜 Sobre o projeto
 
-Repositório da disciplina de Qualidade de Software referente ao projeto de avaliação da plataforma digital [Mural-unb](https://github.com/unb-mds/2025-2-Mural-UnB). Todas as entregas da disciplina estarão centralizadas aqui.
+Este repositório da disciplina de Qualidade de Software é referente ao projeto de avaliação da plataforma digital [Mural-unb](https://github.com/unb-mds/2025-2-Mural-UnB). Todas as entregas da disciplina estarão centralizadas aqui.
 
 ## 📎 Link da página de documentação
 
