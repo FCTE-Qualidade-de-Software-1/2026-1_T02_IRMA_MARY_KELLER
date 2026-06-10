@@ -18,7 +18,7 @@
         <link rel="prev" href="..">
       
       
-        <link rel="next" href="../contribuicao/">
+        <link rel="next" href="../fase2/">
       
       
         
@@ -255,6 +255,63 @@
     
   
   Fase 1 - Processo de Avaliação
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../fase2/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Fase 2 - Especificação da Avaliação
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../fase3/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Fase 3 - Projeto da Avaliação
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../fase4/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Fase 4 - Execução da Avaliação
 
       </a>
     </li>
@@ -748,6 +805,87 @@
   
   
     <li class="md-nav__item">
+      <a href="../fase2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 2 - Especificação da Avaliação
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fase3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 3 - Projeto da Avaliação
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fase4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 4 - Execução da Avaliação
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../contribuicao/" class="md-nav__link">
         
   
@@ -951,12 +1089,11 @@
 <h2 id="6-modelo-de-qualidade-isoiec-25010-e-adaptacao">6. Modelo de Qualidade — ISO/IEC 25010 e Adaptação</h2>
 <p>O modelo de referência adotado é o definido pela ISO/IEC 25010:2011 [1], que organiza a qualidade do produto de software em oito características principais. Para esta avaliação, o modelo foi adaptado ao contexto específico do Mural UnB, restringindo o escopo a três características consideradas prioritárias. A característica <strong>Usabilidade</strong> foi explicitamente excluída por determinação metodológica da disciplina [4].</p>
 <h3 id="61-representacao-grafica-do-modelo-adaptado">6.1 Representação Gráfica do Modelo Adaptado</h3>
+<p><strong>Representação Gráfica do Modelo Adaptado</strong></p>
+<p><strong>Diagrama 1</strong></p>
 <pre class="mermaid"><code>graph TD
     A["Qualidade do Produto — Mural UnB"] --&gt; B["Adequação Funcional&lt;br/&gt;(selecionada)"]
     A --&gt; C["Confiabilidade&lt;br/&gt;(selecionada)"]
-    A --&gt; D["Manutenibilidade&lt;br/&gt;(selecionada)"]
-    A --&gt; X["Usabilidade&lt;br/&gt;(excluída — diretriz disciplina)"]
-    A --&gt; Y["Segurança, Desempenho,&lt;br/&gt;Compatibilidade, Portabilidade&lt;br/&gt;(fora do escopo desta fase)"]
 
     B --&gt; B1["Completude Funcional"]
     B --&gt; B2["Correção Funcional"]
@@ -964,15 +1101,20 @@
 
     C --&gt; C1["Maturidade"]
     C --&gt; C2["Disponibilidade"]
-    C --&gt; C3["Tolerância a Falhas"]
+    C --&gt; C3["Tolerância a Falhas"]</code></pre>
+<p><strong>Diagrama 2</strong></p>
+<pre class="mermaid"><code>graph TD
+    A["Qualidade do Produto — Mural UnB"] --&gt; D["Manutenibilidade&lt;br/&gt;(selecionada)"]
+    A --&gt; X["Usabilidade&lt;br/&gt;(excluída — diretriz disciplina)"]
+    A --&gt; Y["Segurança, Desempenho,&lt;br/&gt;Compatibilidade, Portabilidade&lt;br/&gt;(fora do escopo desta fase)"]
 
     D --&gt; D1["Modularidade"]
     D --&gt; D2["Analisabilidade"]
     D --&gt; D3["Modificabilidade"]
     D --&gt; D4["Testabilidade"]
 
-    style X fill:#ffcccc,stroke:#cc0000
-    style Y fill:#f0f0f0,stroke:#999999</code></pre>
+    style X stroke:#cc0000,stroke-width:2px,stroke-dasharray:5 5
+    style Y stroke:#888888,stroke-width:2px,stroke-dasharray:3 3</code></pre>
 <h3 id="62-descricao-das-subcaracteristicas-avaliadas">6.2 Descrição das Subcaracterísticas Avaliadas</h3>
 <p><strong>Adequação Funcional</strong> — avalia se as funções fornecidas cobrem as tarefas e objetivos declarados dos usuários com a abrangência e a precisão necessárias [1]. As subcaracterísticas relevantes para o Mural UnB são:</p>
 <ul>
