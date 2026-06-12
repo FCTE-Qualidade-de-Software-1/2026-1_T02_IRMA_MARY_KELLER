@@ -286,7 +286,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../fase3/planejamento/" class="md-tabs__link">
+        <a href="../../fase3/" class="md-tabs__link">
           
   
   
@@ -308,7 +308,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../dados-brutos/" class="md-tabs__link">
+        <a href="../" class="md-tabs__link">
           
   
   
@@ -545,6 +545,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../../fase3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../fase3/planejamento/" class="md-nav__link">
         
   
@@ -721,6 +749,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../dados-brutos/" class="md-nav__link">
         
   
@@ -860,6 +916,45 @@
       
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#respostas-as-questoes-e-objetivos-gqm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Respostas às Questões e Objetivos GQM
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Respostas às Questões e Objetivos GQM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#respostas-por-questao-q" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Respostas por Questão (Q)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#respostas-por-objetivo-g" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Respostas por Objetivo (G)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1082,6 +1177,45 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#respostas-as-questoes-e-objetivos-gqm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Respostas às Questões e Objetivos GQM
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Respostas às Questões e Objetivos GQM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#respostas-por-questao-q" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Respostas por Questão (Q)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#respostas-por-objetivo-g" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Respostas por Objetivo (G)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#historico-de-versoes" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1259,7 +1393,80 @@
 </tbody>
 </table>
 <hr />
-<p><a href="../dados-brutos/">← Voltar à Fase 4</a></p>
+<h2 id="respostas-as-questoes-e-objetivos-gqm">Respostas às Questões e Objetivos GQM</h2>
+<p>Com base nos valores calculados e nos critérios de julgamento da Fase 2, é possível responder diretamente a cada Questão (Q) e a cada Objetivo (G) do framework GQM.</p>
+<h3 id="respostas-por-questao-q">Respostas por Questão (Q)</h3>
+<table>
+<thead>
+<tr>
+<th>Questão</th>
+<th>Enunciado resumido</th>
+<th>Resposta</th>
+<th>Evidência</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Q1 — Completude</td>
+<td>O sistema executa todas as operações de CRUD e filtragem?</td>
+<td><strong>Sim</strong> — ICF = 100%</td>
+<td>M1.1 Excelente: todos os cenários especificados foram homologados</td>
+</tr>
+<tr>
+<td>Q2 — Correção</td>
+<td>A IA classifica e modera anúncios de forma precisa?</td>
+<td><strong>Não</strong> — TPM = 45%</td>
+<td>M1.2 Insatisfatório: 11 de 20 conteúdos impróprios foram aprovados (100% de falsos negativos)</td>
+</tr>
+<tr>
+<td>Q3 — Maturidade</td>
+<td>Qual a estabilidade da API/banco ao processar payloads JSON corrompidos?</td>
+<td><strong>Insatisfatória</strong> — DDC = 1,00</td>
+<td>M2.1 Insatisfatório: o único caso de teste gerou colapso total do frontend</td>
+</tr>
+<tr>
+<td>Q4 — Modularidade</td>
+<td>O código-fonte apresenta baixo acoplamento e distribuição adequada de responsabilidades?</td>
+<td><strong>Parcialmente</strong> — CCM = 13,53 (Bom na média)</td>
+<td>M3.1 Bom na média geral; porém duas funções atingiram Rank F (CC = 72 e CC = 66), indicando monolitismo localizado</td>
+</tr>
+<tr>
+<td>Q5 — Testabilidade</td>
+<td>A base de código possui salvaguardas suficientes contra regressões?</td>
+<td><strong>Não</strong> — PCT &lt; 50%</td>
+<td>M3.2 Insatisfatório: frontend com 0% de cobertura; backend com 126 testes (100% de aprovação)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="respostas-por-objetivo-g">Respostas por Objetivo (G)</h3>
+<table>
+<thead>
+<tr>
+<th>Objetivo</th>
+<th>Julgamento Final</th>
+<th>Justificativa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>G1 — Adequação Funcional</td>
+<td><strong>Parcialmente Satisfatório</strong></td>
+<td>Completude funcional excelente (M1.1 = 100%), mas correção comprometida pela falha crítica da moderação por IA (M1.2 = 45%)</td>
+</tr>
+<tr>
+<td>G2 — Confiabilidade</td>
+<td><strong>Insatisfatório</strong></td>
+<td>Tolerância a falhas ausente no frontend: colapso total diante de payload corrompido (M2.1 = 1,00)</td>
+</tr>
+<tr>
+<td>G3 — Manutenibilidade</td>
+<td><strong>Parcialmente Satisfatório</strong></td>
+<td>Complexidade média aceitável (M3.1 = 13,53 — Bom), mas cobertura de testes crítica (M3.2 &lt; 50% — Insatisfatório)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><a href="../">← Voltar à Fase 4</a></p>
 <h2 id="historico-de-versoes">Histórico de Versões</h2>
 <table>
 <thead>
@@ -1271,6 +1478,12 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>2.0</td>
+<td>12/06/2026</td>
+<td>Adição das respostas explícitas às Questões e Objetivos GQM</td>
+<td><a href="https://github.com/AkaeRanni">Ranni Heler</a></td>
+</tr>
 <tr>
 <td>1.0</td>
 <td>12/06/2026</td>

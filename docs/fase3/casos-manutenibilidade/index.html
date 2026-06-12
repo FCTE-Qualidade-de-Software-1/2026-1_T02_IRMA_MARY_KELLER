@@ -288,7 +288,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../planejamento/" class="md-tabs__link">
+        <a href="../" class="md-tabs__link">
           
   
   
@@ -308,7 +308,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../fase4/dados-brutos/" class="md-tabs__link">
+        <a href="../../fase4/" class="md-tabs__link">
           
   
   
@@ -540,6 +540,34 @@
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -793,6 +821,34 @@
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -1062,10 +1118,10 @@
 <div class="highlight"><pre><span></span><code>npm<span class="w"> </span>run<span class="w"> </span><span class="nb">test</span><span class="w"> </span>--<span class="w"> </span>--coverage
 </code></pre></div></li>
 </ol>
-<p><strong>Resultado Esperado:</strong> O pipeline deve processar as strings através do modelo <code>text-embedding-004</code>. O algoritmo deve demonstrar alta acurácia, alocando tags acadêmicas corretas para publicações legítimas e rejeitando ou isolando publicações com conteúdo impróprio (comércio, ofensas e spams) através do cálculo correto da distância vetorial.</p>
+<p><strong>Resultado Esperado:</strong> O backend deve apresentar alta taxa de cobertura de linhas e ramificações protegidas por testes automatizados. O frontend React deve ter o script <code>"test"</code> configurado e executável. A ausência de cobertura no frontend resultará em classificação Insatisfatório conforme os critérios de M3.2 definidos na Fase 2.</p>
 <hr />
 <h2 id="ct-main-02-avaliacao-de-complexidade-ciclomatica-radon">CT-MAIN-02: Avaliação de Complexidade Ciclomática (Radon)</h2>
-<p><strong>Métrica Associada:</strong> M3.3 (Mapeamento de Rank de Complexidade de Fluxo)</p>
+<p><strong>Métrica Associada:</strong> M3.1 (Complexidade Ciclomática Média - CCM)</p>
 <p><strong>Objetivo:</strong> Isolar e pontuar funções monolíticas que contenham desvios excessivos, elevando o custo de manutenção do projeto.</p>
 <p><strong>Passos de Execução:</strong></p>
 <ol>
@@ -1078,7 +1134,7 @@
 </ol>
 <p><strong>Resultado Esperado:</strong> O relatório deve mapear todas as estruturas de controle do projeto. Espera-se que as funções e métodos apresentem um fluxo linear e coeso, mantendo os índices de complexidade dentro dos limites aceitáveis de desenvolvimento (Ranks A ou B), garantindo que o código seja de fácil leitura, manutenção e expansão.</p>
 <hr />
-<p><a href="../planejamento/">← Voltar à Fase 3</a></p>
+<p><a href="../">← Voltar à Fase 3</a></p>
 <h2 id="historico-de-versoes">Histórico de Versões</h2>
 <table>
 <thead>
@@ -1090,6 +1146,12 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>1.2</td>
+<td>12/06/2026</td>
+<td>Correção da referência M3.3 → M3.1 no CT-MAIN-02; correção do texto do resultado esperado do CT-MAIN-01 (texto de embedding removido); correção do link de navegação</td>
+<td><a href="https://github.com/AkaeRanni">Ranni Heler</a></td>
+</tr>
 <tr>
 <td>1.1</td>
 <td>11/06/2026</td>

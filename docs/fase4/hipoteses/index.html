@@ -286,7 +286,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../fase3/planejamento/" class="md-tabs__link">
+        <a href="../../fase3/" class="md-tabs__link">
           
   
   
@@ -308,7 +308,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../dados-brutos/" class="md-tabs__link">
+        <a href="../" class="md-tabs__link">
           
   
   
@@ -545,6 +545,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../../fase3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../fase3/planejamento/" class="md-nav__link">
         
   
@@ -721,6 +749,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../dados-brutos/" class="md-nav__link">
         
   
@@ -863,6 +919,17 @@
     <span class="md-ellipsis">
       
         H3.1 — Interrupções por Campos Nulos ou Corrompidos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#h41-concentracao-de-logica-em-modulos-monoliticos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        H4.1 — Concentração de Lógica em Módulos Monolíticos
       
     </span>
   </a>
@@ -1049,6 +1116,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#h41-concentracao-de-logica-em-modulos-monoliticos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        H4.1 — Concentração de Lógica em Módulos Monolíticos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#h51-ausencia-de-testes-automatizados" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1106,11 +1184,15 @@
 <p><strong>Status: Confirmada</strong></p>
 <p>A hipótese foi confirmada com densidade máxima de defeitos. O frontend em React não apresentou programação defensiva para lidar com falhas no parsing de arquivos externos. O motor JavaScript V8 interrompeu o fluxo de controle da página ao tentar executar <code>.map()</code> em uma estrutura que não era um array válido (<code>fetchOpportunities.ts</code>, linha 135), seguido de um erro <code>NS_BINDING_ABORTED</code> que causou o cancelamento em cascata de todas as requisições assíncronas ativas, congelando os componentes em estado estático com falhas silenciosas visíveis apenas no painel F12.</p>
 <hr />
+<h2 id="h41-concentracao-de-logica-em-modulos-monoliticos">H4.1 — Concentração de Lógica em Módulos Monolíticos</h2>
+<p><strong>Status: Parcialmente Confirmada</strong></p>
+<p>A hipótese previa que a lógica de negócio estaria excessivamente concentrada em módulos monolíticos, elevando o custo de manutenção. Os dados da métrica M3.1 (CCM = 13,53) revelam resultado <strong>Bom</strong> para a complexidade média do sistema, o que refuta a hipótese em termos globais. No entanto, a análise Radon identificou duas funções críticas no módulo <code>extrair_labs_fga.py</code> com complexidade de <strong>Rank F</strong> — <code>encontrar_imagem_para_lab</code> (CC = 72) e <code>extrair_laboratorios_fga_pdf</code> (CC = 66) —, confirmando concentração pontual e crítica de lógica procedimental. A hipótese é, portanto, parcialmente confirmada: o problema não é generalizado, mas as funções de maior responsabilidade apresentam monolitismo que eleva o custo de manutenção e dificulta refatorações seguras.</p>
+<hr />
 <h2 id="h51-ausencia-de-testes-automatizados">H5.1 — Ausência de Testes Automatizados</h2>
 <p><strong>Status: Confirmada</strong></p>
 <p>A hipótese foi inteiramente confirmada pela métrica M3.2. A ausência total de um framework de automação de testes no ecossistema do frontend deixa toda a camada de interface desprotegida contra erros de regressão. Embora o backend possua 126 testes lógicos consistentes, a falta de simetria com o frontend fragiliza a evolução segura do código por novos engenheiros de software.</p>
 <hr />
-<p><a href="../dados-brutos/">← Voltar à Fase 4</a></p>
+<p><a href="../">← Voltar à Fase 4</a></p>
 <h2 id="historico-de-versoes">Histórico de Versões</h2>
 <table>
 <thead>
@@ -1122,6 +1204,12 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>2.0</td>
+<td>12/06/2026</td>
+<td>Adição da avaliação da H4.1 (modularidade) e correção do link de navegação</td>
+<td><a href="https://github.com/AkaeRanni">Ranni Heler</a></td>
+</tr>
 <tr>
 <td>1.0</td>
 <td>12/06/2026</td>

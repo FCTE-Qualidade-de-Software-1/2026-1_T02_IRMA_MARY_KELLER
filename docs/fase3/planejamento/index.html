@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://fcte-qualidade-de-software-1.github.io/2026-1_T02_IRMA_MARY_KELLER/fase3/planejamento/">
       
       
-        <link rel="prev" href="../../fase2/">
+        <link rel="prev" href="../">
       
       
         <link rel="next" href="../casos-funcional-confiabilidade/">
@@ -288,7 +288,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../" class="md-tabs__link">
           
   
   
@@ -308,7 +308,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../fase4/dados-brutos/" class="md-tabs__link">
+        <a href="../../fase4/" class="md-tabs__link">
           
   
   
@@ -545,6 +545,34 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -662,6 +690,17 @@
     <span class="md-ellipsis">
       
         1.4. Fontes de Evidência e Rastreabilidade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-rastreabilidade-com-a-fase-2-consistencia-do-plano" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.5. Rastreabilidade com a Fase 2 — Consistência do Plano
       
     </span>
   </a>
@@ -832,6 +871,34 @@
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -1094,6 +1161,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#15-rastreabilidade-com-a-fase-2-consistencia-do-plano" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.5. Rastreabilidade com a Fase 2 — Consistência do Plano
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#historico-de-versoes" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1145,23 +1223,23 @@
 <tbody>
 <tr>
 <td>Adequação Funcional</td>
-<td>Q1. Completude e Precisão da IA</td>
-<td>M1.2</td>
-<td>Taxa de Precisão Semântica da Moderação da IA</td>
-<td><code>scripts/generate_embeddings_gemini.py</code></td>
-<td>CT-FUNC-02</td>
-</tr>
-<tr>
-<td>Adequação Funcional</td>
-<td>Q2. Operação do Feed</td>
+<td>Q1. Completude — Operação do Feed</td>
 <td>M1.1</td>
 <td>Comportamento de CRUD e Isolamento de Filtros</td>
 <td><code>scripts/juntar_oportunidades.py</code></td>
 <td>CT-FUNC-01</td>
 </tr>
 <tr>
+<td>Adequação Funcional</td>
+<td>Q2. Correção — Precisão da IA</td>
+<td>M1.2</td>
+<td>Taxa de Precisão Semântica da Moderação da IA</td>
+<td><code>scripts/generate_embeddings_gemini.py</code></td>
+<td>CT-FUNC-02</td>
+</tr>
+<tr>
 <td>Confiabilidade</td>
-<td>Q3. Tolerância a Falhas</td>
+<td>Q3. Maturidade — Tolerância a Falhas</td>
 <td>M2.1</td>
 <td>Resiliência do Frontend a Payloads Corrompidos</td>
 <td>Injeção Manual de Falhas e DevTools (F12)</td>
@@ -1169,19 +1247,19 @@
 </tr>
 <tr>
 <td>Manutenibilidade</td>
-<td>Q4. Testabilidade</td>
+<td>Q4. Modularidade — Distribuição de Responsabilidades</td>
+<td>M3.1</td>
+<td>Índice de Complexidade Ciclomática por Bloco</td>
+<td>Radon (Módulos Python)</td>
+<td>CT-MAIN-02</td>
+</tr>
+<tr>
+<td>Manutenibilidade</td>
+<td>Q5. Testabilidade — Cobertura de Código</td>
 <td>M3.2</td>
 <td>Percentual de Cobertura de Código (Lines/Branches)</td>
 <td>PyTest-Cov / Framework do Frontend</td>
 <td>CT-MAIN-01</td>
-</tr>
-<tr>
-<td>Manutenibilidade</td>
-<td>Q5. Analisabilidade</td>
-<td>M3.3</td>
-<td>Índice de Complexidade Ciclomática por Bloco</td>
-<td>Radon (Módulos Python)</td>
-<td>CT-MAIN-02</td>
 </tr>
 </tbody>
 </table>
@@ -1282,6 +1360,53 @@
 </tbody>
 </table>
 <hr />
+<hr />
+<h2 id="15-rastreabilidade-com-a-fase-2-consistencia-do-plano">1.5. Rastreabilidade com a Fase 2 — Consistência do Plano</h2>
+<p>A consistência entre a Fase 2 (Especificação da Avaliação) e este Plano de Avaliação (Fase 3) é total: cada Caso de Teste (CT) foi projetado para coletar os dados necessários ao cálculo de exatamente uma métrica definida no framework GQM, garantindo que nenhuma métrica fique sem instrução de coleta e que nenhum CT execute atividade desvinculada de uma métrica especificada.</p>
+<table>
+<thead>
+<tr>
+<th>Métrica (Fase 2)</th>
+<th>Fórmula / Atributo</th>
+<th>Caso de Teste (Fase 3)</th>
+<th>Método de coleta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>M1.1</strong> — ICF</td>
+<td>Cenários CRUD e filtros homologados / Total especificado</td>
+<td>CT-FUNC-01</td>
+<td>Execução do script de unificação + inspeção de filtros no React</td>
+</tr>
+<tr>
+<td><strong>M1.2</strong> — TPM</td>
+<td>Classificações corretas da IA / Total de postagens de teste</td>
+<td>CT-FUNC-02</td>
+<td>20 frases de controle injetadas no pipeline <code>text-embedding-004</code></td>
+</tr>
+<tr>
+<td><strong>M2.1</strong> — DDC</td>
+<td>Falhas críticas / Total de casos de teste de confiabilidade</td>
+<td>CT-CONF-01</td>
+<td>Injeção de payload JSON corrompido + observação via DevTools (F12)</td>
+</tr>
+<tr>
+<td><strong>M3.1</strong> — CCM</td>
+<td>Soma de complexidades / Total de funções</td>
+<td>CT-MAIN-02</td>
+<td>Varredura Radon (<code>radon cc scripts/ -a -s</code>)</td>
+</tr>
+<tr>
+<td><strong>M3.2</strong> — PCT</td>
+<td>Linhas cobertas / Total de linhas × 100</td>
+<td>CT-MAIN-01</td>
+<td><code>pytest --cov</code> (backend) + <code>npm run test -- --coverage</code> (frontend)</td>
+</tr>
+</tbody>
+</table>
+<p>Os critérios de julgamento (Excelente / Bom / Regular / Insatisfatório) definidos para cada métrica na Fase 2 são aplicados diretamente aos dados coletados nesta Fase 3 e analisados na Fase 4, garantindo rastreabilidade ponta a ponta sem lacunas.</p>
+<hr />
 <p><a href="../">← Voltar à Fase 3</a></p>
 <h2 id="historico-de-versoes">Histórico de Versões</h2>
 <table>
@@ -1294,6 +1419,12 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>2.0</td>
+<td>12/06/2026</td>
+<td>Correção de referência M3.3→M3.1 e adição da seção de rastreabilidade F2→F3</td>
+<td><a href="https://github.com/AkaeRanni">Ranni Heler</a></td>
+</tr>
 <tr>
 <td>1.0</td>
 <td>11/06/2026</td>

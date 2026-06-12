@@ -18,7 +18,7 @@
         <link rel="prev" href="../casos-manutenibilidade/">
       
       
-        <link rel="next" href="../../fase4/dados-brutos/">
+        <link rel="next" href="../../fase4/">
       
       
         
@@ -288,7 +288,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../planejamento/" class="md-tabs__link">
+        <a href="../" class="md-tabs__link">
           
   
   
@@ -308,7 +308,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../fase4/dados-brutos/" class="md-tabs__link">
+        <a href="../../fase4/" class="md-tabs__link">
           
   
   
@@ -540,6 +540,34 @@
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -812,6 +840,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../../fase4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visão Geral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../fase4/dados-brutos/" class="md-nav__link">
         
   
@@ -1071,7 +1127,7 @@
 <h1 id="4-ferramentas-ambiente-e-infraestrutura-de-avaliacao">4. Ferramentas, Ambiente e Infraestrutura de Avaliação</h1>
 <p>Esta seção descreve o ecossistema técnico controlado onde a equipe de QA realizou as auditorias, detalhando as ferramentas que viabilizaram a geração de dados auditáveis.</p>
 <h2 id="41-ambiente-de-hardware-e-dispositivos">4.1. Ambiente de Hardware e Dispositivos</h2>
-<p><strong>Estação de Trabalho Primária (QA Head):</strong> Notebook executando ambiente nativo Linux Ubuntu de 64-bits, utilizado para execução dos comandos do PyTest, análise estática via Radon e barramento do ciclo de vida dos scripts em Python 3.12.3.</p>
+<p><strong>Estação de Trabalho Primária (QA Head):</strong> Notebook executando ambiente nativo Linux Ubuntu de 64-bits, utilizado para execução dos comandos do PyTest, análise estática via Radon e execução dos scripts em Python 3.12.3.</p>
 <p><strong>Dispositivo de Renderização Client:</strong> Hardware local com monitor configurado em resolução padrão de 1080p, com suporte a inspeção via DevTools para monitoramento de renderização e estouro de exceções do motor JavaScript V8.</p>
 <hr />
 <h2 id="42-ambiente-de-software-e-versoes-do-ecossistema">4.2. Ambiente de Software e Versões do Ecossistema</h2>
@@ -1101,8 +1157,8 @@
 </tr>
 <tr>
 <td>PyTest-Cov</td>
-<td>v7.0.0</td>
-<td>Instrumentação lógica para geração de relatórios físicos de cobertura</td>
+<td>—</td>
+<td>Geração de relatórios de cobertura de código integrados ao PyTest</td>
 </tr>
 <tr>
 <td>ESLint</td>
@@ -1124,6 +1180,12 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>1.1</td>
+<td>12/06/2026</td>
+<td>Revisão de linguagem; remoção de versão não verificada do PyTest-Cov</td>
+<td><a href="https://github.com/AkaeRanni">Ranni Heler</a></td>
+</tr>
 <tr>
 <td>1.0</td>
 <td>11/06/2026</td>
