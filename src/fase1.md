@@ -87,9 +87,7 @@ O modelo de referência adotado é o definido pela ISO/IEC 25010:2011 [1], que o
 
 ### 6.1 Representação Gráfica do Modelo Adaptado
 
-**Representação Gráfica do Modelo Adaptado**
-
-**Diagrama 1**
+**Diagrama 1 — Características Funcionais e de Confiabilidade**
 
 ```mermaid
 graph TD
@@ -105,7 +103,7 @@ graph TD
     C --> C3["Tolerância a Falhas"]
 ```
 
-**Diagrama 2**
+**Diagrama 2 — Manutenibilidade e Características fora do Escopo**
 
 ```mermaid
 graph TD
@@ -206,7 +204,7 @@ Esta Fase 1 estabelece os requisitos que orientarão:
 
 - **Fase 2** (Especificação da Avaliação): definição de métricas, procedimentos de medição e critérios de julgamento para cada subcaracterística selecionada;
 - **Fase 3** (Execução da Avaliação): coleta de dados brutos, aplicação das métricas e consolidação dos resultados; e
-- **Fase 4** (Conclusão): elaboração do relatório final com relação entre as características avaliadas e recomendações de melhoria.
+- **Fase 4** (Execução da Avaliação): coleta de dados brutos, cálculo das métricas, julgamento final e recomendações de melhoria.
 
 Não há avaliações anteriores deste software pelos avaliadores que possam ser utilizadas como linha de base comparativa.
 
@@ -253,5 +251,6 @@ O Mural UnB conecta-se a objetivos da Agenda 2030 da ONU [6] que são diretament
 
 | Versão | Data | Descrição | Autor |
 |--------|------|-----------|-------|
-| 1.1 | 13/05/2026|Reestruturação da fase 1| Matheus Rodrigues|
-| 1.0 | 11/05/2026 | Criação da estrutura inicial da página com contexto, modelo de qualidade e características selecionadas |Paulo Nery Lobo|
+| 1.2 | 12/06/2026 | Correção do cabeçalho duplicado na seção 6.1; alinhamento da nomenclatura da Fase 4 com o restante do documento | [Ranni Heler](https://github.com/AkaeRanni) |
+| 1.1 | 13/05/2026 | Reestruturação da fase 1 | Matheus Rodrigues |
+| 1.0 | 11/05/2026 | Criação da estrutura inicial da página com contexto, modelo de qualidade e características selecionadas | Paulo Nery Lobo |

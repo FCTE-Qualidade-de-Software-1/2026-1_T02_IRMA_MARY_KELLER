@@ -4,7 +4,7 @@ Esta seção descreve o ecossistema técnico controlado onde a equipe de QA real
 
 ## 4.1. Ambiente de Hardware e Dispositivos
 
-**Estação de Trabalho Primária (QA Head):** Notebook executando ambiente nativo Linux Ubuntu de 64-bits, utilizado para execução dos comandos do PyTest, análise estática via Radon e barramento do ciclo de vida dos scripts em Python 3.12.3.
+**Estação de Trabalho Primária (QA Head):** Notebook executando ambiente nativo Linux Ubuntu de 64-bits, utilizado para execução dos comandos do PyTest, análise estática via Radon e execução dos scripts em Python 3.12.3.
 
 **Dispositivo de Renderização Client:** Hardware local com monitor configurado em resolução padrão de 1080p, com suporte a inspeção via DevTools para monitoramento de renderização e estouro de exceções do motor JavaScript V8.
 
@@ -26,7 +26,7 @@ Esta seção descreve o ecossistema técnico controlado onde a equipe de QA real
 |------------|--------|-----------|
 | Radon | v6.0.1 | Análise estática para extração de complexidade ciclomática e atribuição de Ranks de legibilidade (A a F) |
 | PyTest | v9.0.1 | Framework de execução de testes automatizados |
-| PyTest-Cov | v7.0.0 | Instrumentação lógica para geração de relatórios físicos de cobertura |
+| PyTest-Cov | — | Geração de relatórios de cobertura de código integrados ao PyTest |
 | ESLint | — | Checagem estática de conformidade e boas práticas de escrita de código TypeScript via `npm run lint` |
 
 ---
@@ -37,4 +37,5 @@ Esta seção descreve o ecossistema técnico controlado onde a equipe de QA real
 
 | Versão | Data | Descrição | Autor |
 |--------|------|-----------|-------|
+| 1.1 | 12/06/2026 | Revisão de linguagem; remoção de versão não verificada do PyTest-Cov | [Ranni Heler](https://github.com/AkaeRanni) |
 | 1.0 | 11/06/2026 | Criação da seção de ferramentas e ambiente de avaliação | Paulo Nery Lobo |

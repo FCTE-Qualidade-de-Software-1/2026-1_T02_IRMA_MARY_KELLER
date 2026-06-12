@@ -54,11 +54,13 @@ nav:
   - Fase 1 - Processo de Avaliação: fase1.md
   - Fase 2 - Especificação da Avaliação: fase2.md
   - Fase 3 - Projeto de Avaliação:
+    - Visão Geral: fase3.md
     - 1. Planejamento: fase3/planejamento.md
     - 2. Casos de Teste - Funcional e Confiabilidade: fase3/casos-funcional-confiabilidade.md
     - 3. Casos de Teste - Manutenibilidade: fase3/casos-manutenibilidade.md
     - 4. Ferramentas e Ambiente: fase3/ferramentas.md
   - Fase 4 - Execução da Avaliação:
+    - Visão Geral: fase4.md
     - 1. Dados Brutos Coletados: fase4/dados-brutos.md
     - 2. Cálculo das Métricas: fase4/metricas.md
     - 3. Avaliação das Hipóteses: fase4/hipoteses.md

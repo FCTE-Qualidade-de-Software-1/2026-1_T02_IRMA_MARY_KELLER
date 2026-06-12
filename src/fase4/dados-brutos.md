@@ -89,10 +89,11 @@ Esta seção consolida as evidências físicas coletadas de forma empírica dura
 
 ---
 
-[← Voltar à Fase 4](../fase4/dados-brutos.md)
+[← Voltar à Fase 4](../fase4.md)
 
 ## Histórico de Versões
 
 | Versão | Data | Descrição | Autor |
 |--------|------|-----------|-------|
+| 1.1 | 12/06/2026 | Correção do link de navegação para a visão geral da Fase 4 | [Ranni Heler](https://github.com/AkaeRanni) |
 | 1.0 | 12/06/2026 | Criação da seção de dados brutos coletados | Matheus Rodrigues |

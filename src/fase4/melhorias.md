@@ -48,7 +48,7 @@ Implementar componentes do tipo `Error Boundary` na raiz da árvore do React. Es
 
 ---
 
-## Manutenibilidade e Infraestrutura (M3.2 & M3.3)
+## Manutenibilidade e Infraestrutura (M3.1 & M3.2)
 
 ### Provisionamento de Framework de Testes no Frontend
 
@@ -74,10 +74,11 @@ Uniformizar as chamadas de configuração da API da Google em todos os scripts P
 
 ---
 
-[← Voltar à Fase 4](../fase4/dados-brutos.md)
+[← Voltar à Fase 4](../fase4.md)
 
 ## Histórico de Versões
 
 | Versão | Data | Descrição | Autor |
 |--------|------|-----------|-------|
+| 1.1 | 12/06/2026 | Correção de referência M3.3 → M3.1 no título da seção e link de navegação | [Ranni Heler](https://github.com/AkaeRanni) |
 | 1.0 | 12/06/2026 | Criação do plano de ações mitigadoras | Matheus Rodrigues |

@@ -14,11 +14,11 @@ Adota-se uma abordagem orientada pelo método GQM (Goal-Question-Metric). A cole
 
 | Característica | Questão do GQM | Métrica | Escopo Técnico | Ferramenta / Fonte de Dados | Caso de Teste |
 |----------------|---------------|---------|----------------|-----------------------------|---------------|
-| Adequação Funcional | Q1. Completude e Precisão da IA | M1.2 | Taxa de Precisão Semântica da Moderação da IA | `scripts/generate_embeddings_gemini.py` | CT-FUNC-02 |
-| Adequação Funcional | Q2. Operação do Feed | M1.1 | Comportamento de CRUD e Isolamento de Filtros | `scripts/juntar_oportunidades.py` | CT-FUNC-01 |
-| Confiabilidade | Q3. Tolerância a Falhas | M2.1 | Resiliência do Frontend a Payloads Corrompidos | Injeção Manual de Falhas e DevTools (F12) | CT-CONF-01 |
-| Manutenibilidade | Q4. Testabilidade | M3.2 | Percentual de Cobertura de Código (Lines/Branches) | PyTest-Cov / Framework do Frontend | CT-MAIN-01 |
-| Manutenibilidade | Q5. Analisabilidade | M3.3 | Índice de Complexidade Ciclomática por Bloco | Radon (Módulos Python) | CT-MAIN-02 |
+| Adequação Funcional | Q1. Completude — Operação do Feed | M1.1 | Comportamento de CRUD e Isolamento de Filtros | `scripts/juntar_oportunidades.py` | CT-FUNC-01 |
+| Adequação Funcional | Q2. Correção — Precisão da IA | M1.2 | Taxa de Precisão Semântica da Moderação da IA | `scripts/generate_embeddings_gemini.py` | CT-FUNC-02 |
+| Confiabilidade | Q3. Maturidade — Tolerância a Falhas | M2.1 | Resiliência do Frontend a Payloads Corrompidos | Injeção Manual de Falhas e DevTools (F12) | CT-CONF-01 |
+| Manutenibilidade | Q4. Modularidade — Distribuição de Responsabilidades | M3.1 | Índice de Complexidade Ciclomática por Bloco | Radon (Módulos Python) | CT-MAIN-02 |
+| Manutenibilidade | Q5. Testabilidade — Cobertura de Código | M3.2 | Percentual de Cobertura de Código (Lines/Branches) | PyTest-Cov / Framework do Frontend | CT-MAIN-01 |
 
 ---
 
@@ -50,10 +50,29 @@ Os seguintes artefatos e ferramentas são utilizados como repositórios de dados
 
 ---
 
+---
+
+## 1.5. Rastreabilidade com a Fase 2 — Consistência do Plano
+
+A consistência entre a Fase 2 (Especificação da Avaliação) e este Plano de Avaliação (Fase 3) é total: cada Caso de Teste (CT) foi projetado para coletar os dados necessários ao cálculo de exatamente uma métrica definida no framework GQM, garantindo que nenhuma métrica fique sem instrução de coleta e que nenhum CT execute atividade desvinculada de uma métrica especificada.
+
+| Métrica (Fase 2) | Fórmula / Atributo | Caso de Teste (Fase 3) | Método de coleta |
+|------------------|--------------------|------------------------|-----------------|
+| **M1.1** — ICF | Cenários CRUD e filtros homologados / Total especificado | CT-FUNC-01 | Execução do script de unificação + inspeção de filtros no React |
+| **M1.2** — TPM | Classificações corretas da IA / Total de postagens de teste | CT-FUNC-02 | 20 frases de controle injetadas no pipeline `text-embedding-004` |
+| **M2.1** — DDC | Falhas críticas / Total de casos de teste de confiabilidade | CT-CONF-01 | Injeção de payload JSON corrompido + observação via DevTools (F12) |
+| **M3.1** — CCM | Soma de complexidades / Total de funções | CT-MAIN-02 | Varredura Radon (`radon cc scripts/ -a -s`) |
+| **M3.2** — PCT | Linhas cobertas / Total de linhas × 100 | CT-MAIN-01 | `pytest --cov` (backend) + `npm run test -- --coverage` (frontend) |
+
+Os critérios de julgamento (Excelente / Bom / Regular / Insatisfatório) definidos para cada métrica na Fase 2 são aplicados diretamente aos dados coletados nesta Fase 3 e analisados na Fase 4, garantindo rastreabilidade ponta a ponta sem lacunas.
+
+---
+
 [← Voltar à Fase 3](../fase3.md)
 
 ## Histórico de Versões
 
 | Versão | Data | Descrição | Autor |
 |--------|------|-----------|-------|
+| 2.0 | 12/06/2026 | Correção de referência M3.3→M3.1 e adição da seção de rastreabilidade F2→F3 | [Ranni Heler](https://github.com/AkaeRanni) |
 | 1.0 | 11/06/2026 | Criação do planejamento da avaliação | Paulo Nery Lobo |

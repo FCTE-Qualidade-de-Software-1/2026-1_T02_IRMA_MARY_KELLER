@@ -21,13 +21,13 @@ pytest --cov=scripts --cov-report=html
 npm run test -- --coverage
 ```
 
-**Resultado Esperado:** O pipeline deve processar as strings através do modelo `text-embedding-004`. O algoritmo deve demonstrar alta acurácia, alocando tags acadêmicas corretas para publicações legítimas e rejeitando ou isolando publicações com conteúdo impróprio (comércio, ofensas e spams) através do cálculo correto da distância vetorial.
+**Resultado Esperado:** O backend deve apresentar alta taxa de cobertura de linhas e ramificações protegidas por testes automatizados. O frontend React deve ter o script `"test"` configurado e executável. A ausência de cobertura no frontend resultará em classificação Insatisfatório conforme os critérios de M3.2 definidos na Fase 2.
 
 ---
 
 ## CT-MAIN-02: Avaliação de Complexidade Ciclomática (Radon)
 
-**Métrica Associada:** M3.3 (Mapeamento de Rank de Complexidade de Fluxo)
+**Métrica Associada:** M3.1 (Complexidade Ciclomática Média - CCM)
 
 **Objetivo:** Isolar e pontuar funções monolíticas que contenham desvios excessivos, elevando o custo de manutenção do projeto.
 
@@ -46,11 +46,12 @@ radon cc scripts/ -a -s
 
 ---
 
-[← Voltar à Fase 3](../fase3/planejamento.md)
+[← Voltar à Fase 3](../fase3.md)
 
 ## Histórico de Versões
 
 | Versão | Data | Descrição | Autor |
 |--------|------|-----------|-------|
+| 1.2 | 12/06/2026 | Correção da referência M3.3 → M3.1 no CT-MAIN-02; correção do texto do resultado esperado do CT-MAIN-01 (texto de embedding removido); correção do link de navegação | [Ranni Heler](https://github.com/AkaeRanni) |
 | 1.1 | 11/06/2026 | Atualização dos resultados esperados do CT-MAIN-01 e CT-MAIN-02 | Paulo Nery Lobo |
 | 1.0 | 11/06/2026 | Criação dos casos de teste de manutenibilidade e testabilidade | Paulo Nery Lobo |

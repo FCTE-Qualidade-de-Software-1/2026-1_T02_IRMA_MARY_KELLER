@@ -33,14 +33,18 @@ A justificativa dos critérios de priorização e a relação entre essas caract
 | Seção | Conteúdo |
 |-------|----------|
 | [Fase 1 — Requisitos de Avaliação](fase1.md) | Propósito, partes interessadas, classificação do produto, modelo de qualidade adaptado, ODS relacionados |
+| [Fase 2 — Especificação da Avaliação](fase2.md) | Framework GQM: objetivos, questões, hipóteses, métricas e critérios de julgamento |
+| [Fase 3 — Projeto de Avaliação](fase3.md) | Plano de execução, casos de teste, ferramentas e ambiente de avaliação |
+| [Fase 4 — Execução da Avaliação](fase4.md) | Dados brutos coletados, cálculo de métricas, hipóteses e sugestões de melhoria |
 | [Tabela de Contribuição](contribuicao.md) | Participação de cada integrante por entrega |
+| [Declaração de Uso de IA](declaracao-ia.md) | Ferramentas utilizadas e forma de revisão da equipe |
 
 ## Equipe
 
 | Nome | Matrícula | GitHub |
 |------|-----------|--------|
 | Paulo Nery Lobo | 221008740 | [@Pnery2004](https://github.com/Pnery2004) |
-| Ranni Heler Lopes | 202016800 | [@AkaeRanni-ranni](https://github.com/AkaeRanni-ranni) |
+| Ranni Heler Lopes | 202016800 | [@AkaeRanni](https://github.com/AkaeRanni) |
 | Thiago Melo Tonin | 2211022453 | [@audittmega](https://github.com/audittmega) |
 | Matheus Rodrigues | 222007012 | [@mrodrigues14](https://github.com/mrodrigues14) |
 | Guilherme Costa Zanella | 222024837 | [@guilhermezan42](https://github.com/guilhermezan42) |
@@ -51,4 +55,5 @@ A justificativa dos critérios de priorização e a relação entre essas caract
 
 | Versão | Data | Descrição | Autor |
 |--------|------|-----------|-------|
-| 1.0 | 03/06/2026 | Criação da página inicial com estrutura do projeto, equipe e características avaliadas |Paulo Nery Lobo|
+| 2.0 | 12/06/2026 | Atualização da tabela de estrutura com todas as fases; correção do username do GitHub | [Ranni Heler](https://github.com/AkaeRanni) |
+| 1.0 | 03/06/2026 | Criação da página inicial com estrutura do projeto, equipe e características avaliadas | Paulo Nery Lobo |

@@ -62,9 +62,9 @@ As perguntas buscam caracterizar o produto em relação a aspectos específicos 
 
 > **Hipótese 3.1 (H3.1):** O recebimento de campos nulos ou corrompidos resulta em interrupções abruptas (HTTP 500) por ausência de tratamento de exceções.
 
-**Q4 (Modularidade):** A arquitetura do Frontend em React/TypeScript minimiza o acoplamento entre os componentes de interface?
+**Q4 (Modularidade):** A base de código do sistema apresenta baixo acoplamento e adequada distribuição de responsabilidades entre seus módulos e funções?
 
-> **Hipótese 4.1 (H4.1):** A lógica de negócio está excessivamente concentrada em componentes globais, ferindo a manutenibilidade.
+> **Hipótese 4.1 (H4.1):** A lógica de negócio está excessivamente concentrada em funções ou módulos monolíticos, elevando o custo de manutenção do sistema.
 
 **Q5 (Analisabilidade/Testabilidade):** A base de código possui salvaguardas suficientes para prevenir defeitos durante processos de refatoração?
 
@@ -144,8 +144,69 @@ As métricas fornecem os dados necessários para responder às perguntas, permit
 
 ---
 
+## 1.6. Diagrama GQM — Hierarquia de Objetivos, Questões e Métricas
+
+O diagrama a seguir ilustra a hierarquia completa do framework GQM aplicado nesta avaliação, partindo dos três Objetivos de Medição até as Métricas que respondem a cada Questão.
+
+```mermaid
+flowchart TD
+    A["<b>G1</b><br/>Adequação Funcional<br/><i>Módulo de postagens, filtros e moderação IA</i>"]
+    B["<b>G2</b><br/>Confiabilidade<br/><i>Persistência de dados e endpoints JSON</i>"]
+    C["<b>G3</b><br/>Manutenibilidade<br/><i>Código-fonte React · TypeScript · Python</i>"]
+
+    Q1["<b>Q1</b> — Completude<br/>O sistema executa todas as operações<br/>de CRUD e filtragem?"]
+    Q2["<b>Q2</b> — Correção<br/>A IA modera anúncios com precisão?"]
+    Q3["<b>Q3</b> — Maturidade<br/>Qual a estabilidade da API/BD<br/>com payloads JSON?"]
+    Q4["<b>Q4</b> — Modularidade<br/>O código-fonte apresenta baixo acoplamento<br/>e distribuição adequada de responsabilidades?"]
+    Q5["<b>Q5</b> — Testabilidade<br/>A base de código possui salvaguardas<br/>contra regressões?"]
+
+    M11["<b>M1.1</b> ICF<br/>Índice de Completude Funcional"]
+    M12["<b>M1.2</b> TPM<br/>Taxa de Precisão da Moderação"]
+    M21["<b>M2.1</b> DDC<br/>Densidade de Defeitos Críticos"]
+    M31["<b>M3.1</b> CCM<br/>Complexidade Ciclomática Média"]
+    M32["<b>M3.2</b> PCT<br/>Percentual de Cobertura de Testes"]
+
+    A --> Q1 --> M11
+    A --> Q2 --> M12
+    B --> Q3 --> M21
+    C --> Q4 --> M31
+    C --> Q5 --> M32
+```
+
+---
+
+## 1.7. Rastreabilidade com a Fase 1
+
+A consistência entre a Fase 1 (Requisitos de Avaliação) e esta Fase 2 (Especificação da Avaliação) é total e justificada nos pontos a seguir.
+
+### Características → Objetivos de Medição
+
+Na Fase 1, a equipe selecionou três características do modelo ISO/IEC 25010 e as priorizou segundo quatro critérios (criticidade para o propósito, mensurabilidade objetiva, impacto nos usuários e relevância para o contexto acadêmico open source):
+
+| Prioridade (Fase 1) | Característica | Objetivo GQM correspondente (Fase 2) |
+|---------------------|---------------|--------------------------------------|
+| 1ª — Alta | Adequação Funcional | **G1** — Avaliar completude e correção das regras de negócio |
+| 2ª — Alta | Confiabilidade | **G2** — Avaliar estabilidade sob carga e falhas de dados |
+| 3ª — Média | Manutenibilidade | **G3** — Avaliar viabilidade de evolução por novos desenvolvedores |
+
+Cada Goal desta Fase 2 deriva diretamente de uma característica priorizada na Fase 1, preservando a ordem de prioridade estabelecida.
+
+### Stakeholders → Perspectivas de Medição
+
+Na Fase 1, foram identificados como partes interessadas: a comunidade discente e os moderadores do sistema (usuários diretos) e a equipe de engenharia de software (desenvolvedores e mantenedores). Na Fase 2, os Objetivos de Medição adotam explicitamente essas perspectivas:
+
+- **G1 e G2** analisam o sistema sob o **ponto de vista da comunidade discente e dos moderadores** — os que sofrem o impacto de falhas funcionais e de confiabilidade.
+- **G3** analisa o código sob o **ponto de vista dos engenheiros de software** — os responsáveis pela evolução e manutenção do ecossistema.
+
+### Propósito da Avaliação → Foco das Questões
+
+O propósito declarado na Fase 1 foi identificar não-conformidades e fornecer insumos para melhoria, sem classificar ou rejeitar o software. As Questões Q1–Q5 traduzem esse propósito em perguntas operacionais mensuráveis, cada uma cobrindo um atributo de qualidade diretamente ligado a uma das características priorizadas.
+
+---
+
 ## Histórico de Versões
 
 | Versão | Data | Descrição | Autor |
 |--------|------|-----------|-------|
+| 2.0 | 12/06/2026 | Adição do diagrama GQM Mermaid e seção de rastreabilidade com a Fase 1 | [Ranni Heler](https://github.com/AkaeRanni) |
 | 1.0 | 08/06/2026 | Criação da estrutura inicial da página com metodologia GQM, goals, questões, métricas e escopo da avaliação | Grupo Irmã Mary Keller |

@@ -59,11 +59,12 @@ python scripts/alocar_tags_embeddings.py
 
 ---
 
-[← Voltar à Fase 3](../fase3/planejamento.md)
+[← Voltar à Fase 3](../fase3.md)
 
 ## Histórico de Versões
 
 | Versão | Data | Descrição | Autor |
 |--------|------|-----------|-------|
+| 1.2 | 12/06/2026 | Correção do link de navegação para a visão geral da Fase 3 | [Ranni Heler](https://github.com/AkaeRanni) |
 | 1.1 | 11/06/2026 | Atualização do resultado esperado do CT-FUNC-02 | Paulo Nery Lobo |
 | 1.0 | 11/06/2026 | Criação dos casos de teste de adequação funcional e confiabilidade | Paulo Nery Lobo |

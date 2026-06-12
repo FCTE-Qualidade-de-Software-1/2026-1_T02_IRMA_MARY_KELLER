@@ -30,6 +30,14 @@ A hipótese foi confirmada com densidade máxima de defeitos. O frontend em Reac
 
 ---
 
+## H4.1 — Concentração de Lógica em Módulos Monolíticos
+
+**Status: Parcialmente Confirmada**
+
+A hipótese previa que a lógica de negócio estaria excessivamente concentrada em módulos monolíticos, elevando o custo de manutenção. Os dados da métrica M3.1 (CCM = 13,53) revelam resultado **Bom** para a complexidade média do sistema, o que refuta a hipótese em termos globais. No entanto, a análise Radon identificou duas funções críticas no módulo `extrair_labs_fga.py` com complexidade de **Rank F** — `encontrar_imagem_para_lab` (CC = 72) e `extrair_laboratorios_fga_pdf` (CC = 66) —, confirmando concentração pontual e crítica de lógica procedimental. A hipótese é, portanto, parcialmente confirmada: o problema não é generalizado, mas as funções de maior responsabilidade apresentam monolitismo que eleva o custo de manutenção e dificulta refatorações seguras.
+
+---
+
 ## H5.1 — Ausência de Testes Automatizados
 
 **Status: Confirmada**
@@ -38,10 +46,11 @@ A hipótese foi inteiramente confirmada pela métrica M3.2. A ausência total de
 
 ---
 
-[← Voltar à Fase 4](../fase4/dados-brutos.md)
+[← Voltar à Fase 4](../fase4.md)
 
 ## Histórico de Versões
 
 | Versão | Data | Descrição | Autor |
 |--------|------|-----------|-------|
+| 2.0 | 12/06/2026 | Adição da avaliação da H4.1 (modularidade) e correção do link de navegação | [Ranni Heler](https://github.com/AkaeRanni) |
 | 1.0 | 12/06/2026 | Criação da avaliação das hipóteses e discussão dos resultados | Matheus Rodrigues |
