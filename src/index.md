@@ -65,5 +65,6 @@ A justificativa dos critérios de priorização e a relação entre essas caract
 
 | Versão | Data | Descrição | Autor |
 |--------|------|-----------|-------|
+| 2.1 | 19/06/2026 | Adicionando tabela de contribuição | Paulo Nery Lobo |
 | 2.0 | 12/06/2026 | Atualização da tabela de estrutura com todas as fases; correção do username do GitHub | [Ranni Heler](https://github.com/AkaeRanni) |
 | 1.0 | 03/06/2026 | Criação da página inicial com estrutura do projeto, equipe e características avaliadas | Paulo Nery Lobo |

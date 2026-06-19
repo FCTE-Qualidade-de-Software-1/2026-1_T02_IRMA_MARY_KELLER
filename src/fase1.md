@@ -254,6 +254,7 @@ O Mural UnB conecta-se a objetivos da Agenda 2030 da ONU [6] que são diretament
 
 | Versão | Data | Descrição | Autor |
 |--------|------|-----------|-------|
+| 1.3 | 19/06/2026 | Adcionando tela inicial do mural UnB com descrição e enumeração | Paulo Nery Lobo |
 | 1.2 | 12/06/2026 | Correção do cabeçalho duplicado na seção 6.1; alinhamento da nomenclatura da Fase 4 com o restante do documento | [Ranni Heler](https://github.com/AkaeRanni) |
 | 1.1 | 13/05/2026 | Reestruturação da fase 1 | Matheus Rodrigues |
 | 1.0 | 11/05/2026 | Criação da estrutura inicial da página com contexto, modelo de qualidade e características selecionadas | Paulo Nery Lobo |

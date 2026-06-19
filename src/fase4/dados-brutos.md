@@ -101,5 +101,6 @@ Esta seção consolida as evidências físicas coletadas de forma empírica dura
 
 | Versão | Data | Descrição | Autor |
 |--------|------|-----------|-------|
+| 1.2 | 19/06/2026 | Adicionando descrição e enumeração das imagens | Paulo Nery Lobo |
 | 1.1 | 12/06/2026 | Correção do link de navegação para a visão geral da Fase 4 | [Ranni Heler](https://github.com/AkaeRanni) |
 | 1.0 | 12/06/2026 | Criação da seção de dados brutos coletados | Matheus Rodrigues |
