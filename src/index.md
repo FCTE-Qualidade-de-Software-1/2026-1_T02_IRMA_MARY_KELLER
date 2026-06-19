@@ -49,6 +49,16 @@ A justificativa dos critérios de priorização e a relação entre essas caract
 | Matheus Rodrigues | 222007012 | [@mrodrigues14](https://github.com/mrodrigues14) |
 | Guilherme Costa Zanella | 222024837 | [@guilhermezan42](https://github.com/guilhermezan42) |
 
+## Tabela de Contribuição
+
+| Nome | Matrícula | Participação (%) | Principais Contribuições |
+|------|-----------|:----------------:|--------------------------|
+| Paulo Nery Lobo | 221008740 | 20% | Criação da estrutura inicial (Fase 1 e página inicial); configuração de infraestrutura e execução de auditorias estáticas (Fase 3) |
+| Ranni Heler Lopes | 202016800 | 20% | Revisão integral para EU2 (coerência, diagrama GQM, seções de rastreabilidade nas Fases 1–4); manutenção do histórico de versões |
+| Thiago Melo Tonin | 2211022453 | 20% | Contribuições na construção e revisão do trabalho |
+| Matheus Rodrigues | 222007012 | 20% | Coleta de dados brutos, cálculo de métricas, avaliação de hipóteses e plano de melhorias (Fase 4) |
+| Guilherme Costa Zanella | 222024837 | 20% | Contribuições na construção e revisão do trabalho |
+
 ---
 
 ## Histórico de Versões
