@@ -18,8 +18,10 @@ Esta seção consolida as evidências físicas coletadas de forma empírica dura
 
 
 ![Testes de Complexidade Ciclomática](../prints-testes/Testes_complexidade.png)
+*Figura 1- Primeira parte dos testes*
 
 ![Testes de Complexidade Ciclomática 2](../prints-testes/Testes_complexidade_2.png)
+*Figura 2- Segunda parte dos testes*
 
 **Resumo:** 62 blocos (classes, funções, métodos) analisados. Complexidade média: **B (7,56)**
 
@@ -33,7 +35,9 @@ Esta seção consolida as evidências físicas coletadas de forma empírica dura
 | Frontend (Interface React) | 0 itens | Inexistente | Framework de testes não configurado no `package.json` |
 
 ![Cobertura de Testes](../prints-testes/Cobertura_testes.png)
+*Figura 3- Testes do backend*
 ![Cobertura de Testes](../prints-testes/Testes_frontend.png)
+*Figura 4- Testes do frontend*
 
 ---
 
@@ -48,6 +52,7 @@ Esta seção consolida as evidências físicas coletadas de forma empírica dura
 | Critério M1.1 | ICF = **100%** (Excelente) para o escopo básico; volatilidade do estado registrada como oportunidade de melhoria |
 
 ![Teste de Filtros](../prints-testes/Testefiltros.png)
+*Figura 5- Testes de filtro*
 
 ---
 
@@ -86,6 +91,7 @@ Esta seção consolida as evidências físicas coletadas de forma empírica dura
 | DevTools Console (módulo de rede) | `NS_BINDING_ABORTED` | Erro crítico de aborto de vinculação de recursos de mídia e imagens estruturais | Falha silenciosa em cascata: cancelamento de todas as requisições assíncronas ativas, congelamento dos componentes periféricos em estado estático e mensagens de erro isoladas no painel F12 |
 
 ![Testes Frontend JSON](../prints-testes/Testes_frontend_json.png)
+*Figura 6- Testes de json frontend*
 
 ---
 

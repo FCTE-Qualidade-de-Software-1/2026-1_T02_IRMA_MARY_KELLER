@@ -12,6 +12,9 @@ A Fase 1, denominada "Estabelecimento dos Requisitos de Avaliação", tem como o
 
 O **Mural UnB** é uma plataforma digital desenvolvida pelo projeto MDS/GPP da Universidade de Brasília com o propósito de centralizar e organizar a divulgação de oportunidades, eventos e avisos acadêmicos dirigidos à comunidade universitária. O sistema coleta informações de múltiplas fontes, aplica processamento automatizado com inteligência artificial e as disponibiliza em interface web de acesso público.
 
+![Figura 1 - Tela inicial Mural UnB](prints-testes/Mural-unb.png)
+*Figura 1 - Tela inicial Mural UnB*
+
 ### 2.1 Objetivos da Plataforma
 
 O projeto foi concebido para substituir a comunicação dispersa em grupos informais de mensagens e murais físicos, fornecendo um canal estruturado e categorizado de informações. Entre as finalidades declaradas no repositório oficial [3], destacam-se:
